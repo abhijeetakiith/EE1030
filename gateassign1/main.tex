@@ -53,7 +53,7 @@
 \renewcommand{\thetable}{\theenumi}
 
 \title{GATE ME-2007}
-\author{AI24BTECH11001 - Abhijeet Kumar
+\author{AI24BTECH11032 Shreyansh Sonkar
 }
 \maketitle
 \renewcommand{\thefigure}{\theenumi}
@@ -61,10 +61,32 @@
 
 \begin{enumerate}[start = 52]
     \item The natural frequemcy of the system shown below is
-    \begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{fig1.png}  
-    \end{figure}
+ \begin{figure}[!ht]
+\centering
+\begin{circuitikz}[scale=0.7] % Adjust scale here to make the image smaller
+\tikzstyle{every node}=[font=\normalsize]
+\draw (4.25,9.5) to[R] (6.25,9.5);
+\draw (4.25,8.25) to[R] (6.25,8.25);
+\draw [short] (4.25,9.5) -- (4.25,8.25);
+\draw [short] (6.25,9.5) -- (6.25,8.25);
+\draw (6.25,8.75) to[R] (8.25,8.75);
+\node [font=\normalsize] at (5.25,10) {};
+\draw  (8.25,9.25) rectangle (9.5,8.25);
+\draw  (8.5,8) circle (0.25cm);
+\draw  (9.25,8) circle (0.25cm);
+\node [font=\normalsize] at (7.25,9.25) {k};
+\node [font=\normalsize] at (5.25,10) {k/2};
+\node [font=\normalsize] at (5.25,7.75) {k/2};
+\node [font=\normalsize] at (8.75,8.75) {m};
+\draw (3.75,8.75) to[short] (4.25,8.75);
+\draw [ fill={rgb,255:red,127; green,122; blue,122} ] (8,7.75) rectangle (9.75,7.5);
+\draw [ fill={rgb,255:red,127; green,122; blue,122} ] (3.5,9.75) rectangle (3.75,7.75);
+\end{circuitikz}
+
+\label{fig:my_label}
+\end{figure}
+
+
 
     \begin{multicols}{4}
         \begin{enumerate}
@@ -229,10 +251,73 @@
     \end{multicols}
 
     \item A $200$ mm long down sprue has an area of cross-section of $650$ $mm^2$ where the pouring basin meets the down sprue (i.e. at the beginning of the down sprue). A constant head of molten metal is maintained by the pouring basin. The molten metal flow rate is $6.5 \times 10^5$ $mm^{3}/s$. Considering the end of down sprue to be open to atmosphere and an acceleration due to gravity of $10^4$ $mm/s^2$, the area of the down sprue in $mm^2$ at its end (avoiding aspirat effect) should be
-    \begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{fig2.png} 
-    \end{figure}
+    \begin{figure}[!ht]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}[scale=0.7]
+\tikzstyle{every node}=[font=\normalsize]
+
+% Vertical lines
+\draw (4.5,15.5) -- (4.5,13);
+\draw (7.75,15.5) -- (7.75,13);
+
+% Horizontal line (top)
+\draw (4.5,15) -- (7.75,15);
+
+% Ellipse
+\draw [fill={rgb,255:red,184; green,183; blue,183}] (6.25,13) ellipse (0.75cm and 0.25cm);
+
+% Horizontal connections to ellipse
+\draw (4.5,13) -- (5.5,13);
+\draw (7,13) -- (7.75,13);
+
+% Diagonal connections
+\draw (5.5,13) -- (6,9.75);
+\draw (7,13) -- (6.5,9.75);
+
+% Small circle
+\draw [fill={rgb,255:red,184; green,183; blue,183}] (6.25,9.75) circle (0.25cm);
+
+% Vertical lines (lower part)
+\draw (4.5,9.75) -- (4.5,8);
+\draw (8,9.75) -- (8,8);
+
+% Double-headed arrow
+\draw [<->, >=Stealth] (7.25,13) -- (7.25,9.75);
+
+% Horizontal lines (bottom part)
+\draw (6.75,9.75) -- (7.75,9.75);
+\draw (4.5,8) -- (8,8);
+
+% Labels
+\node [font=\small] at (7.75,11.25) {200 mm};
+\node [font=\small] at (3.75,12) {650 mm$^2$};
+
+% Rectangle with arrow (left side)
+\draw (2.75,12.5) rectangle (4.75,11.75);
+\draw [->, >=Stealth] (4.75,12.5) -- (5.5,13);
+
+% Text near rectangle
+\node [font=\scriptsize] at (3.5,10.75) {Area of down};
+\node [font=\scriptsize] at (3.5,10.5) {sprue at its};
+\node [font=\scriptsize] at (3.5,10.25) {end};
+
+% Rectangle with arrow (lower left)
+\draw (2.5,11) rectangle (4.5,10);
+\draw [->, >=Stealth] (4.5,10) -- (5.75,9.75);
+
+% Pouring basin text and box
+\node [font=\small] at (10.5,15) {Pouring};
+\node [font=\small] at (10.5,14.5) {Basin};
+\draw (9.75,15.25) rectangle (11.25,14.25);
+\draw [->, >=Stealth] (9.75,14.75) -- (7.75,14.75);
+
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
 
      \begin{multicols}{4}
         \begin{enumerate}
