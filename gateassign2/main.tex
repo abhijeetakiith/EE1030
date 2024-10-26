@@ -1,0 +1,818 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{amsmath}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}  
+\usepackage{circuitikz}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{GATE EE-2009}
+\author{AI24BTECH11001 Abhijeet Kumar
+}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=37]
+    \item The z-transform of a signal $x\sbrak{n}$ is given by $4z^{-3} + 3z^{-1} + 2 - 6z^{2} + 2z^{3}$. It is applied to a system, with a transfer function $H\sbrak{z} = 3z^{-1} -2$. Let the output be $y\sbrak{n}$. Which of the following is true?
+    \begin{enumerate}
+        \item $y\brak{n}$ is non casual with finite support
+        \item $y\brak{n}$ is casual with infinite support
+        \item $y\brak{n}=0 ; \abs{n}>3$
+        \item $Re\sbrak{Y\brak{z}}_{z=e^{j\theta}}=-Re\sbrak{Y\brak{z}}_{z=e^{-j\theta}};Im\sbrak{Y\brak{z}}_{z=e^{j\theta}}=Im\sbrak{Y\brak{z}}_{z=e^{-j\theta}};-\pi\leq \theta < \pi$
+    \end{enumerate}
+
+
+    \item A cubic polynomial with real coefficients
+    \begin{enumerate}
+        \item can possible have no extrema and no zero crossings
+        \item may have up to three extrema and upto $2$ zero crossings
+        \item cannot have more than two extrema and more than three zero crossings
+        \item will always have an equal number of extrema and zero crossings
+    \end{enumerate}
+
+    \item Let $x^2 - 117 =0$. The iterative steps for the solution using Newton-Raphson's method is given by
+    \begin{enumerate}
+        \item $x_{k+1} = \frac{1}{2}\brak{x_k + \frac{117}{x_k}}$
+        \item $x_{k+1} = x_k - \frac{117}{x_k}$
+        \item $x_{k+1} = x_k - \frac{x_k}{117}$
+        \item $x_{k+1} = x_k - \frac{1}{2}\brak{x_k + \frac{117}{x_k}}$
+    \end{enumerate}
+
+    \item $F\brak{x,y}= \brak{x^2+xy}\hat{a}_x + \brak{y^2+xy}\hat{a}_y$. It's line integral over the straight line from $\brak{x,y}=\brak{0,2}$ to $\brak{x,y}=\brak{2,0}$ evaluates to
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $-8$
+            \item $4$
+            \item $8$
+            \item $0$
+        
+        \end{enumerate}
+    \end{multicols}
+
+\newpage
+    \item An ideal opamp circuit and its input waveform are shown in the figures. The output waveform of this circuit will be
+    \begin{figure}[H]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\normalsize]
+
+
+    \draw (5.25,7.5) node[op amp,scale=1, yscale=-1 ] (opamp2) {};
+    \draw (opamp2.+) to[short] (3.75,8);
+    \draw  (opamp2.-) to[short] (3.75,7);
+    \draw (6.45,7.5) to[short](6.75,7.5);
+    \draw (2.25,8) to[R] (4.25,8);
+    \draw (6.75,7.5) to[R] (6.75,6);
+    \draw (6.75,6) to[R] (6.75,4.25);
+    \draw (3.75,7) to[short] (3.75,6);
+    \draw (3.75,6) to[short] (6.75,6);
+    \draw (5.5,8.5) to[short] (5.5,7.75);
+    \draw (5.5,7.25) to[short] (5.5,6.5);
+    \draw (2.25,8) to[short, -o] (2,8) ;
+    \draw (6.75,7.5) to[short, -o] (7.75,7.5) ;
+    \draw (6.75,4.25) to (6.75,4) node[ground]{};
+    \node [font=\large] at (7.5,5) {$1k \Omega$};
+    \node [font=\large] at (7.5,6.75) {$2k \Omega$};
+    \node [font=\normalsize] at (5.5,8.75) {$6V$};
+    \node [font=\normalsize] at (5.5,6.25) {$-3V$};
+    \node [font=\large] at (3.25,8.5) {1k $\Omega$};
+    \node [font=\normalsize] at (1.75,8.25) {$V_{in}$};
+    \node [font=\normalsize] at (8,7.75) {$V_{out}$};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+
+    \begin{figure}[H]   
+    \centering
+
+`   \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\small]
+
+    \foreach \x in {0,...,-1}{
+    }
+    \draw[domain=1.25:9,samples=100,smooth] plot (\x,{1.5*sin(1*\x r -1.25 r ) +7.25});
+    \draw [dashed] (1.25,5.75) -- (5.75,5.75);
+    \draw [dashed] (1.25,8.75) -- (2.75,8.75);
+    \draw [dashed] (1.25,8.25) -- (2,8.25);
+    \draw [dashed] (1.25,7.75) -- (1.5,7.75);
+    \draw [dashed] (1.25,6.25) -- (5,6.25);
+    \draw [dashed] (1.25,6.75) -- (4.5,6.75);
+    \draw [->, >=Stealth] (1.25,7.25) -- (9.5,7.25);
+    \draw [short] (1.25,5.25) -- (1.25,9.25);
+    \draw [dashed] (5.25,7.25) -- (5.25,6.25);
+    \draw [dashed] (2.25,8.25) -- (2.25,7.25);
+    \draw [dashed] (4.75,7.25) -- (4.75,6.75);
+    \draw [dashed] (1.75,7.75) -- (1.75,7.25);
+    \node [font=\normalsize] at (9.5,7) {t};
+    \node [font=\normalsize] at (0.5,7.25) {V};
+    \node [font=\normalsize] at (1,7.25) {$0$};
+    \node [font=\normalsize] at (1,7.75) {$1$};
+    \node [font=\normalsize] at (1,8.25) {$2$};
+    \node [font=\normalsize] at (1,8.75) {$3$};
+    \node [font=\normalsize] at (1,6.75) {$-1$};
+    \node [font=\normalsize] at (1,6.25) {$-2$};
+    \node [font=\normalsize] at (1,5.75) {$-3$};
+    \node [font=\small] at (1.75,7) {$t_1$};
+    \node [font=\small] at (2.25,7) {$t_2$};
+    \node [font=\small] at (4.25,7) {$t_3$};
+    \node [font=\small] at (4.75,7.5) {$t_4$};
+    \node [font=\small] at (5.25,7.5) {$t_5$};
+    \node [font=\small] at (7.5,7.5) {$t_6$};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+
+    \end{figure}
+    \begin{multicols}{2}
+    
+    \begin{enumerate}
+        \item   
+                \begin{figure}[H]
+                \centering
+                \resizebox{0.4\textwidth}{!}{%
+                \begin{circuitikz}
+                \tikzstyle{every node}=[font=\large]
+                \draw [->, >=Stealth] (2,7) -- (9.25,7);
+                \begin{scope}[rotate around={4.5:(2,7)}]
+                \draw[domain=2:5.25,samples=100,smooth] plot (\x,{3.6*sin(1*\x r -2 r ) +7});
+                \end{scope}
+                \begin{scope}[rotate around={-171.75:(8.75,7)}]
+                \draw[domain=8.75:12.25,samples=100,smooth] plot (\x,{1.5*sin(1*\x r -8.75 r ) +7});
+                \end{scope}
+                \draw (2,11.5) to[short] (2,4.5);
+                \draw [dashed] (2,5.25) -- (7.25,5.25);
+                \node [font=\large] at (1.5,7) {$0$};
+                \node [font=\large] at (1.5,10.75) {$6$};
+                \node [font=\large] at (1.5,5.25) {$-3$};
+                \node [font=\large] at (9.25,6.5) {t};
+                \node [font=\large] at (0.75,9) {v};
+                \draw [->, >=Stealth] (1,8.75) -- (1,9.25);
+                \draw [->, >=Stealth] (9,6.75) -- (9.5,6.75);
+                \node [font=\large] at (5.5,7.25) {$t_3$};
+                \node [font=\large] at (8.75,7.25) {$t_6$};
+                \end{circuitikz}
+                }%
+
+                \label{fig:my_label}
+                \end{figure}
+        \item   \begin{figure}[H]
+                \centering
+                \resizebox{0.4\textwidth}{!}{%
+                \begin{circuitikz}
+                \tikzstyle{every node}=[font=\large]
+                \draw [->, >=Stealth] (2,7) -- (9.25,7);
+                \begin{scope}[rotate around={4.5:(2,7)}]
+                \draw[domain=2:5.25,samples=100,smooth] plot (\x,{3.6*sin(1*\x r -2 r ) +7});
+                \end{scope}
+                \draw (2,11.5) to[short] (2,4.5);
+                \draw [dashed] (2,5) -- (6,5);
+                \node [font=\large] at (1.5,7) {0};
+                \node [font=\large] at (1.5,10.75) {6};
+                \node [font=\large] at (1.5,5.25) {-3};
+                \node [font=\large] at (9.25,6.5) {t};
+                \node [font=\large] at (0.75,9) {v};
+                \draw [->, >=Stealth] (1,8.75) -- (1,9.25);
+                \draw [->, >=Stealth] (9,6.75) -- (9.5,6.75);
+                \node [font=\large] at (5.5,7.25) {$t_3$};
+                \node [font=\large] at (8.75,7.25) {$t_6$};
+                \draw [short] (8.75,7) -- (8.25,5);
+                \draw [short] (5.25,7) -- (6,5);
+                \draw [short] (6,5) -- (8.25,5);
+                \end{circuitikz}
+                }%
+
+                \label{fig:my_label}
+                \end{figure}
+                
+        \item   \begin{figure}[H]
+                \centering
+                \resizebox{0.4\textwidth}{!}{%
+                \begin{circuitikz}
+                \tikzstyle{every node}=[font=\large]
+                \draw [->, >=Stealth] (2,7) -- (9.25,7);
+                \draw (2,11.5) to[short] (2,4.5);
+                \node [font=\large] at (1.5,7) {0};
+                \node [font=\large] at (1.5,10.75) {6};
+                \node [font=\large] at (1.5,5.25) {-3};
+                \node [font=\large] at (9.25,6.5) {t};
+                \node [font=\large] at (0.75,9) {v};
+                \draw [->, >=Stealth] (1,8.75) -- (1,9.25);
+                \draw [->, >=Stealth] (9,6.75) -- (9.5,6.75);
+                \draw [short] (2,5.25) -- (3.75,5.25);
+                \draw [short] (3.75,5.25) -- (3.75,10.75);
+                \draw [short] (3.75,10.75) -- (5.5,10.75);
+                \draw [short] (5.5,10.75) -- (5.5,5.25);
+                \draw [short] (5.5,5.25) -- (7.25,5.25);
+                \draw [dashed] (7.25,7) -- (7.25,5.25);
+                \node [font=\large] at (4,7.25) {$t_2$};
+                \node [font=\large] at (5.75,7.25) {$t_4$};
+                \node [font=\large] at (7.25,7.25) {$t_6$};
+                \end{circuitikz}
+                }%
+
+                \label{fig:my_label}
+                \end{figure}
+                
+        \item   \begin{figure}[H]
+                \centering
+                \resizebox{0.4\textwidth}{!}{%
+                \begin{circuitikz}
+                \tikzstyle{every node}=[font=\LARGE]
+                \draw [->, >=Stealth] (2,7) -- (9.25,7);
+                \draw (2,11.5) to[short] (2,4.5);
+                \node [font=\large] at (1.5,7) {0};
+                \node [font=\large] at (1.5,10.75) {6};
+                \node [font=\large] at (1.5,5.25) {-3};
+                \node [font=\large] at (9.25,6.5) {t};
+                \node [font=\large] at (0.75,9) {v};
+                \draw [->, >=Stealth] (1,8.75) -- (1,9.25);
+                \draw [->, >=Stealth] (9,6.75) -- (9.5,6.75);
+                \draw [short] (3.75,5.25) -- (5.5,5.25);
+                \draw [short] (3.75,5.25) -- (3.75,10.75);
+                \draw [short] (5.5,10.75) -- (5.5,5.25);
+                \node [font=\large] at (4,7.25) {$t_2$};
+                \node [font=\large] at (5.75,7.25) {$t_4$};
+                \node [font=\large] at (7.25,7.25) {$t_6$};
+
+                \draw [dashed] (2,5.25) -- (3.5,5.25);
+                \draw [dashed] (7,10.75) -- (7,7);
+                \draw [short] (2,10.75) -- (3.75,10.75);
+                \draw [short] (5.5,10.75) -- (7,10.75);
+                \end{circuitikz}
+                }%
+
+                \label{fig:my_label}
+                \end{figure}
+    \end{enumerate}
+    \end{multicols}
+    
+
+    \item A $220$V, $50$ Hz, single-phase induction motor has the following connection diagram and winding orientations shown. MM' is the axis of the main stator winding. $\brak{M_1M_2}$ and AA' is that of the auxiliary winding $\brak{A_1A_2}$. Directions of the winding axes indicate direction of flux when currents in the windings are in the directions shown. Parameters of each winding are indicated. When switch S is closed, the motor
+
+    \begin{figure}[!ht]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\small]
+
+    % Draw the main circuit components
+    \draw (4,15) to[short] (7.75,15);               % Horizontal line at the top
+    \draw (7.75,15) to[L, l_=$L_m$] (7.75,13);      % Inductor L_m
+    \draw (7.75,13) to[short] (7,13);               % Connection from L_m to A_2
+    \draw (7,13) to[short] (7,10.25);               % Vertical line to A_2
+    
+    % Horizontal line on left side
+    \draw (4,15) to[short] (4,12.25);
+    \draw (4,12.25) to[L, l_=$L_a$] (7,12.25);      % Inductor L_a
+    
+    % Closing switch
+    \draw (3,11.5) to[closing switch, l_=S] (4,11.5);
+
+    % Terminals
+    \draw (3,10.25) to[short, -o] (7,10.25);        % Terminal output at A'
+
+    % Labels and nodes
+  
+    \node [font=\large] at (4.25,12) {$A_1$};
+    \node [font=\large] at (6.75,12) {$A_2$};
+    \node [font=\normalsize] at (7.25,11.5) {$A$};
+    \node [font=\normalsize] at (10.25,11.5) {$A'$};
+    \node [font=\normalsize] at (9,12.5) {$M$};
+    \node [font=\normalsize] at (9,9.5) {$M'$};
+    \node [font=\normalsize] at (8,14.75) {$M_1$};
+    \node [font=\normalsize] at (8,13.25) {$M_2$};
+    \node [font=\large] at (10.25,10.75) {Rotor};
+    \node [font=\normalsize] at (2.75,11.25) {220V};
+    \node [font=\normalsize] at (2.75,10.75) {50Hz};
+
+    % Resistors and inductors labels
+    \node [font=\small] at (5.5,13) {$r_a = 1 \, \Omega$};
+    \node [font=\small] at (5.5,12.75) {$L_a= 10/ \pi \text{H}$};
+    \node [font=\small] at (8.75,14.25) {$r_m = 0.1 \, \Omega$};
+    \node [font=\small] at (8.75,13.75) {$L_m= 0.1 /\pi \text{H}$};
+
+    % Directional arrows
+    \draw [->, >=Stealth] (5,11.75) -- (6,11.75);
+    \draw [->, >=Stealth] (7.25,14.5) -- (7.25,13.5);
+    \draw [->, >=Stealth] (7.25,11.25) -- (10.5,11.25);
+    \draw [->, >=Stealth] (8.75,12.75) -- (8.75,9.5);
+
+    % Circle for rotor
+    \draw (8.75,11.25) circle (1cm);
+
+    \end{circuitikz}
+    }
+    \label{fig:my_label}
+    \end{figure}
+    
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item rotate clockwise 
+            \item rotates anticlockwise
+            \item does not rotate
+            \item rotates and comes to a halt
+        \end{enumerate}
+    \end{multicols}
+
+    \item The circuit shown an ideal diode connected to a pure inductor and is connected to a purely sinosoidal 50 Hz voltage source. Under ideal conditions the current waveform through the inductor will look like
+
+    \begin{figure}[!ht]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\normalsize]
+
+
+    \draw (2.25,16) to[D] (5.75,16);
+    \draw (5.75,16) to[L ] (5.75,14);
+    \draw (2.25,16) to[sinusoidal voltage source, sources/symbol/rotate=auto] (2.25,14);
+    \draw (2.25,14) to[short] (5.75,14);
+    \node [font=\large] at (4,16.5) {$D$};
+    \node [font=\normalsize] at (7,15) {$L=(0.1/ \pi) H$};
+    \node [font=\normalsize] at (3.5,15.75) {$+$};
+    \node [font=\normalsize] at (4.5,15.75) {$-$};
+    \node [font=\normalsize] at (2,15.5) {$+$};
+    \node [font=\normalsize] at (2,14.5) {$-$};
+    \node [font=\normalsize] at (0.5,15) {$V_s= 10\sin 100 \pi t$};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+    
+        \begin{enumerate}
+            \item \begin{figure}[H]
+
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\LARGE]
+    \draw  (0.75,13.25) rectangle (33.25,2.5);
+    \node [font=\LARGE] at (0.25,2.25) {0};
+    \node [font=\LARGE] at (0,6.75) {0.5};
+    \node [font=\LARGE] at (0,10.75) {1};
+    \node [font=\LARGE] at (0,14.5) {1.5};
+    \node [font=\LARGE] at (7,2) {10};
+    \node [font=\LARGE] at (13.75,2) {20};
+    \node [font=\LARGE] at (20.25,2) {30};
+    \node [font=\LARGE] at (26.75,2) {40};
+    \node [font=\LARGE] at (33,2) {50};
+    \node [font=\LARGE] at (1,2) {0};
+    \node [font=\LARGE] at (17.25,0.75) {time (ms)};
+    \node [font=\LARGE] at (-2.5,8.25) {current};
+    \draw[domain=0.5:3.75,samples=100,smooth] plot (\x,{7.7*sin(1*\x r -0.5 r ) +4.25});
+    \draw (0.75,3.25) to[short] (0.75,2.5);
+    \draw[domain=4:7.25,samples=100,smooth] plot (\x,{7.7*sin(1*\x r -4 r ) +3.25});
+    \draw (4,3.25) to[short] (4,2.5);
+    \draw[domain=7.25:10.5,samples=100,smooth] plot (\x,{7.7*sin(1*\x r -7.25 r ) +3.25});
+    \draw[domain=10.5:13.75,samples=100,smooth] plot (\x,{7.7*sin(1*\x r -10.5 r ) +3.25});
+    \draw (7.25,3.25) to[short] (7.25,2.5);
+    \draw (10.5,3.25) to[short] (10.5,2.5);
+    \draw[domain=13.75:17,samples=100,smooth] plot (\x,{7.7*sin(1*\x r -13.75 r ) +3.25});
+    \draw[domain=17:20.25,samples=100,smooth] plot (\x,{7.7*sin(1*\x r -17 r ) +3.25});
+    \draw (17,3.25) to[short] (17,2.5);
+    \draw (13.75,3.25) to[short] (13.75,2.5);
+    \draw[domain=20.25:23.5,samples=100,smooth] plot (\x,{7.7*sin(1*\x r -20.25 r ) +3.25});
+    \draw[domain=23.5:26.75,samples=100,smooth] plot (\x,{7.7*sin(1*\x r -23.5 r ) +3.25});
+    \draw (23.5,3.25) to[short] (23.5,2.5);
+    \draw (20.25,3.25) to[short] (20.25,2.5);
+    \draw[domain=26.75:30,samples=100,smooth] plot (\x,{7.7*sin(1*\x r -26.75 r ) +3.25});
+    \draw[domain=30:33.25,samples=100,smooth] plot (\x,{7.7*sin(1*\x r -30 r ) +3.25});
+    \draw (30,3.25) to[short] (30,2.5);
+    \draw (26.75,3.25) to[short] (26.75,2.5);
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+            \item \begin{figure}[H]
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\LARGE]
+    \draw  (0.5,10.25) rectangle (16.75,4.75);
+    \begin{scope}[rotate around={4.5:(0.5,4.75)}]
+    \draw[domain=0.5:3.75,samples=100,smooth] plot (\x,{3.8*sin(1*\x r -0.5 r ) +4.75});
+    \end{scope}
+    \begin{scope}[rotate around={4.5:(7,4.75)}]
+    \draw[domain=7:10.25,samples=100,smooth] plot (\x,{3.8*sin(1*\x r -7 r ) +4.75});
+    \end{scope}
+    \begin{scope}[rotate around={4.5:(10.25,4.75)}]
+    \draw[domain=10.25:13.5,samples=100,smooth] plot (\x,{3.9*sin(1*\x r -10.25 r ) +4.75});
+    \end{scope}
+    \node [font=\LARGE] at (0,4.75) {0};
+    \node [font=\LARGE] at (0,6.75) {0.5};
+    \node [font=\LARGE] at (0,8.5) {1};
+    \node [font=\LARGE] at (-0.25,10.25) {1.5};
+    \node [font=\LARGE] at (3.75,4.25) {10};
+    \node [font=\LARGE] at (7,4.25) {20};
+    \node [font=\LARGE] at (10.25,4.25) {30};
+    \node [font=\LARGE] at (13.5,4.25) {40};
+    \node [font=\LARGE] at (16.5,4.25) {50};
+    \node [font=\LARGE] at (0.25,4.25) {0};
+    \node [font=\LARGE] at (9.25,3) {time (ms)};
+    \node [font=\LARGE] at (-1.75,7.5) {current};
+    \begin{scope}[rotate around={4.5:(3.75,4.75)}]
+    \draw[domain=3.75:7,samples=100,smooth] plot (\x,{3.8*sin(1*\x r -3.75 r ) +4.75});
+    \end{scope}
+    \begin{scope}[rotate around={4.5:(13.5,4.75)}]
+    \draw[domain=13.5:16.75,samples=100,smooth] plot (\x,{3.9*sin(1*\x r -13.5 r ) +4.75});
+    \end{scope}
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+            \item \begin{figure}[H]
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\LARGE]
+    \draw  (0.5,10.5) rectangle (9,4.75);
+    \begin{scope}[rotate around={4.5:(0.5,4.75)}]
+    \draw[domain=0.5:3.75,samples=100,smooth] plot (\x,{3.8*sin(1*\x r -0.5 r ) +4.75});
+    \end{scope}
+    \draw[domain=7:8.75,samples=100,smooth] plot (\x,{3.8*sin(1*\x r -7 r ) +4.75});
+    \node [font=\LARGE] at (0,4.75) {0};
+    \node [font=\LARGE] at (0,6.75) {0.5};
+    \node [font=\LARGE] at (0,8.5) {1};
+    \node [font=\LARGE] at (-0.25,10.25) {1.5};
+    \node [font=\LARGE] at (2,4.25) {10};
+    \node [font=\LARGE] at (3.75,4.25) {20};
+    \node [font=\LARGE] at (5.25,4.25) {30};
+    \node [font=\LARGE] at (7,4.25) {40};
+    \node [font=\LARGE] at (9,4.25) {50};
+    \node [font=\LARGE] at (0.25,4.25) {0};
+    \node [font=\LARGE] at (5.25,3.25) {time (ms)};
+    \node [font=\LARGE] at (-1.75,7.5) {current};
+    \begin{scope}[rotate around={4.5:(3.75,4.75)}]
+    \draw[domain=3.75:7,samples=100,smooth] plot (\x,{3.8*sin(1*\x r -3.75 r ) +4.75});
+    \end{scope}
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+            \item  \begin{figure}[H]
+\
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\LARGE]
+    \draw  (0.5,10.25) rectangle (14.75,4.75);
+    \begin{scope}[rotate around={4.5:(0.5,4.75)}]
+    \draw[domain=0.5:3.75,samples=100,smooth] plot (\x,{3.8*sin(1*\x r -0.5 r ) +4.75});
+    \end{scope}
+    \begin{scope}[rotate around={4.5:(6,4.75)}]
+    \draw[domain=6:9.25,samples=100,smooth] plot (\x,{3.8*sin(1*\x r -6 r ) +4.75});
+    \end{scope}
+    \begin{scope}[rotate around={4.5:(11.5,4.75)}]
+    \draw[domain=11.5:14.75,samples=100,smooth] plot (\x,   {3.9*sin(1*\x r -11.5 r ) +4.75});
+    \end{scope}
+    \node [font=\LARGE] at (0,4.75) {0};
+    \node [font=\LARGE] at (0,6.75) {0.5};
+    \node [font=\LARGE] at (0,8.5) {1};
+    \node [font=\LARGE] at (-0.25,10.25) {1.5};
+    \node [font=\LARGE] at (3.5,4.25) {10};
+    \node [font=\LARGE] at (6,4.25) {20};
+    \node [font=\LARGE] at (9.25,4.25) {30};
+    \node [font=\LARGE] at (11.5,4.25) {40};
+    \node [font=\LARGE] at (14.75,4.25) {50};
+    \node [font=\LARGE] at (0.25,4.25) {0};
+    \node [font=\LARGE] at (7.5,2.75) {time (ms)};
+    \node [font=\LARGE] at (-1.75,7.5) {current};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+            \end{enumerate}
+    
+
+    \item The Current Source Inverter shown in figure is operated by alternately turning on thyristor pairs $\brak{T_1,T_2}$ and $\brak{T_3,T_4}$. If the load is purely resistive, the theoretical maximum output frequency obtainable will be
+
+    \begin{figure}[!ht]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\small]
+
+    \draw (3,15.25) to[short] (8.75,15.25);
+    \draw (8.75,10) to[american current source] (8.75,15.25);
+    \draw (3,10) to[short] (8.75,10);
+    \draw (3,14) to[C] (6.5,14);
+    \draw (3,12.75) to[european resistor] (6.5,12.75);
+    \draw (3,11.25) to[C] (6.5,11.25);
+    \draw (3,15.25) to[D] (3,14);
+    \draw (3,14) to[D] (3,12.75);
+    \draw (3,12.75) to[D] (3,11.25);
+    \draw (3,11.25) to[D] (3,10);
+    \draw (6.5,15.25) to[D] (6.5,14);
+    \draw (6.5,14) to[D] (6.5,12.75);
+    \draw (6.5,12.75) to[D] (6.5,11.25);
+    \draw [short] (3,10.5) -- (2.75,10.25);
+    \draw [short] (3,14.5) -- (2.75,14.25);
+    \draw [short] (2.5,14.25) -- (2.75,14.25);
+    \draw [short] (6.5,14.5) -- (6.25,14.25);
+    \draw [short] (6,14.25) -- (6.25,14.25);
+    \draw (6.5,11.25) to[D] (6.5,10);
+    \draw [short] (6.5,10.5) -- (6.25,10.25);
+    \draw [short] (6,10.25) -- (6.25,10.25);
+    \draw [short] (2.5,10.25) -- (2.75,10.25);
+    \node [font=\small] at (9.5,12.75) {10A};
+    \node [font=\small] at (4.75,12.75) {10 $\Omega$};
+    \node [font=\small] at (7,14.75) {T3};
+    \node [font=\small] at (7,13.25) {D3};
+    \node [font=\small] at (7,12) {D2};
+    \node [font=\small] at (7,10.5) {T2};
+    \node [font=\small] at (2.5,10.75) {T4};
+    \node [font=\small] at (2.5,13.25) {D1};
+    \node [font=\small] at (2.5,14.5) {T1};
+    \node [font=\small] at (2.5,12) {D4};
+    \node [font=\small] at (5,13.75) {+};
+    \node [font=\small] at (5,11.5) {+};
+    \node [font=\small] at (4.5,11.5) {-};
+    \node [font=\small] at (4.5,13.75) {-};
+    \node [font=\small] at (4.75,14.5) {0.1 $\mu$ F};
+    \node [font=\small] at (4.75,10.75) {0.1 $\mu$ F};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $125$ kHz
+            \item $250$ kHz
+            \item $500$ kHz
+            \item $50$ kHz
+        \end{enumerate}
+    \end{multicols}
+
+    \item In the chopper circuit shown, the main thyristor $\brak{T_M}$ is operated at a duty ratio of 0.8 which is much larger the commutation interval. If the maximum allowable reapplied $\frac{dv}{dt}$ on $T_M$ is $50 V/\mu s$, what should be the theoretical minimum value of $C_1$? Assume current ripple through $L_0$ to be negligible.
+    
+\begin{figure}[H]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\LARGE]
+
+    \draw (9.75,10.25) to[short, -o] (1.25,10.25) ;
+    \draw (9.75,10.25) to[R] (9.75,12.75);
+    \draw (8.25,12.75) to[curved capacitor] (8.25,10.25);
+    \draw (5.25,12.75) to[L ] (9.75,12.75);
+    \draw (6.5,10.25) to[D] (6.5,12.75);
+    \draw (5.25,11.75) to[D] (3.5,11.75);
+    \draw (5.25,12.75) to[short] (5.25,11.75);
+    \draw (4,12.75) to[D] (5.25,12.75);
+    \draw (2,12.75) to[curved capacitor] (4.25,12.75);
+    \draw (3.5,12.75) to[short] (3.5,11.75);
+    \draw (2,12.75) to[short] (2,15.5);
+    \draw (2,14) to[L ] (5.25,14);
+    \draw (5.25,12.75) to[short] (5.25,14);
+    \draw (5.25,15.5) to[D] (5.25,14);
+    \draw (5.25,15.5) to[short, -o] (1.25,15.5) ;
+    \node [font=\small] at (1,15.25) {+};
+    \node [font=\small] at (1.25,10.5) {-};
+    \node [font=\normalsize] at (10.5,11.5) {8$\Omega$};
+    \node [font=\normalsize] at (8.75,11.5) {$C_0$};
+    \node [font=\normalsize] at (7,11.5) {$D_0$};
+    \node [font=\normalsize] at (7.5,13.25) {$L_0$};
+    \node [font=\normalsize] at (4,11.5) {$D_1$};
+    \node [font=\normalsize] at (3,13.25) {$C_1$};
+    \node [font=\normalsize] at (4.5,13.25) {$T_A$};
+    \node [font=\normalsize] at (1.25,13.5) {$100V$};
+    \node [font=\normalsize] at (3.5,14.5) {$L_1$};
+    \node [font=\normalsize] at (5.75,14.75) {$T_M$};
+    \node [font=\normalsize] at (2.75,13) {$-$};
+    \node [font=\normalsize] at (3.5,13) {$+$};
+    \draw [short] (5.25,14.5) -- (5,14.25);
+    \draw [short] (5,13) -- (4.75,12.75);
+
+    \end{circuitikz}
+    }%
+    \label{fig:my_label}
+\end{figure}
+
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $0.2 \mu F$
+        \item $0.02 \mu F$
+        \item $2 \mu F$
+        \item $20 \mu F$
+    \end{enumerate}
+    \end{multicols}
+
+    \item Match the switch arrangements on the top row to the steady-state V-I characteristics on the lower row. The steady state operating points are shown by large black dots
+
+   \begin{figure}[!ht]
+    \centering
+    \resizebox{0.7\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\huge]
+    \draw (-1.5,5.75) to[D] (0.75,5.75);
+    \draw (1.5,5.75) to[D] (3.75,5.75);
+    \draw (4.25,5.75) to[short] (5,5.75);
+    \draw (6,5.75) to[short] (6.75,5.75);
+    \draw (5.25,6.25) to[short] (5.75,6.25);
+    \draw (5.25,6.25) to[short] (5.75,6.25);
+    \draw (5.25,6.5) to[short] (5.75,6.5);
+    \draw (5.5,6.75) to[short] (5.5,6.5);
+    \draw (5.5,7) to[short] (5.5,6.5);
+    \draw (5.5,6.25) to[short] (5,5.75);
+    \draw [->, >=Stealth] (5.5,6.25) -- (6,5.75);
+    \draw (7.5,5.75) to[short] (8.25,5.75);
+    \draw (9.25,5.75) to[short] (10,5.75);
+    \draw (8.25,5.75) to[short] (8.75,6.25);
+    \draw [->, >=Stealth] (8.75,6.25) -- (9.25,5.75);
+    \draw (8.5,6.25) to[short] (9,6.25);
+    \draw (8.5,6.5) to[short] (9,6.5);
+    \draw (8.75,7) to[short] (8.75,6.5);
+    \draw (7.75,5.75) to[short] (7.75,5);
+     \draw (9.75,5.75) to[short] (9.75,5);
+     \draw (9.75,5) to[D] (7.75,5);
+    \draw [->, >=Stealth] (-0.75,5.25) -- (0,5.25);
+    \draw [->, >=Stealth] (2.25,5.25) -- (3,5.25);
+    \draw [->, >=Stealth] (5,5.25) -- (6,5.25);
+    \draw [->, >=Stealth] (8.25,4.5) -- (9.25,4.5);
+    \node [font=\normalsize] at (2,5.5) {$+$};
+    \node [font=\normalsize] at (-1,5.5) {$+$};
+    \node [font=\normalsize] at (4.75,5.5) {$+$};
+    \node [font=\normalsize] at (7.75,4.75) {$+$};
+    \node [font=\normalsize] at (6,5.5) {$-$};
+    \node [font=\normalsize] at (9.75,4.75) {$-$};
+    \node [font=\normalsize] at (0.25,5.5) {$-$};
+    \node [font=\normalsize] at (3.25,5.5) {$-$};
+    \draw [short] (2.75,5.75) -- (3,6);
+    \node [font=\normalsize] at (0.25,6.5) {$(A)$};
+    \node [font=\normalsize] at (3.5,6.5) {$(B)$};
+    \node [font=\normalsize] at (6.5,6.5) {$(C)$};
+    \node [font=\normalsize] at (9.75,6.5) {$(D)$};
+    \draw [->, >=Stealth] (-1.5,2.75) -- (0.75,2.75);
+    \draw [->, >=Stealth] (-0.5,2) -- (-0.5,3.75);
+    \draw [->, >=Stealth] (1.5,2.75) -- (3.75,2.75);
+    \draw [->, >=Stealth] (2.5,2) -- (2.5,3.75);
+    \draw [->, >=Stealth] (4.5,2.75) -- (7,2.75);
+    \draw [->, >=Stealth] (5.75,2) -- (5.75,3.75);
+    \draw [->, >=Stealth] (7.75,2.75) -- (10,2.75);
+    \draw [->, >=Stealth] (8.75,2) -- (8.75,3.75);
+    \node [font=\normalsize] at (0.5,3.25) {$(I)$};
+    \node [font=\normalsize] at (3.5,3.25) {$(II)$};
+    \node [font=\normalsize] at (6.75,3.25) {$(III)$};
+    \node [font=\normalsize] at (9.75,3.25) {$(IV)$};
+    \node [font=\normalsize] at (8.5,3.75) {$i_S$};
+    \node [font=\normalsize] at (2.25,3.75) {$i_s$};
+    \node [font=\normalsize] at (-0.75,3.75) {$i_s$};
+    \node [font=\normalsize] at (5.5,3.75) {$i_s$};
+    \node [font=\normalsize] at (0.75,2.5) {$v_s$};
+    \node [font=\normalsize] at (3.75,2.5) {$v_s$};
+    \node [font=\normalsize] at (7,2.5) {$v_s$};
+    \node [font=\normalsize] at (10,2.5) {$v_s$};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item A-I, B-II, C- III, D- IV
+        \item A-II, B-IV, C- I, D- III
+        \item A-IV, B-III, C- I, D- II
+        \item A-IV, B-III, C- II, D- I
+    \end{enumerate}
+        
+    \end{multicols}
+
+    \item For the circuit shown, find out the current flowing through the $2\Omega$ resistance. Also identify the changes to be made to double the current through the $2\Omega$ resistance.
+    \begin{figure}[!ht]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+\   tikzstyle{every node}=[font=\normalsize]
+
+
+    \draw (2,14.75) to[short] (6,14.75);
+    \draw (6,14.75) to[R] (6,12);
+    \draw (2,14.75) to[american voltage source] (2,12);
+    \draw (4,12) to[american current source] (4,14.75);
+    \draw (2,12) to[short] (6,12);
+    \node [font=\normalsize] at (6.75,13.25) {2$\Omega$};
+    \node [font=\normalsize] at (3.25,14) {$I_S= 5A$};
+    \node [font=\normalsize] at (1,14) {$V_S= 4V$};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $\brak{5\text{A} ; \text{Put } V_S = 20\text{V}}$
+        \item $\brak{2\text{A} ; \text{Put } V_S = 8\text{V}}$
+        \item $\brak{5\text{A} ; \text{Put } I_S = 10\text{A}}$ 
+        \item $\brak{7\text{A} ; \text{Put } I_S = 12\text{A}}$
+    \end{enumerate}
+    \end{multicols}
+
+    \item The figure shows a three-phase delta. connected load supplied from a $400$V, $50$ Hz, $3$-phase balanced source. The pressure coil (PC) and current coil (CC) of a wattmeter are connected to the load as shown, with the coil polarities suitably selected to ensure a positive deflection. The wattmeter reading will
+
+    \begin{figure}[H]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\normalsize]
+
+
+    \draw  (2.25,15) rectangle (3.75,11.5);
+    \draw (3.75,13) to[short] (6.5,13);
+    \draw (6,13) to[L ] (8.25,13);
+    \draw (3.75,11.5) to[short] (8.25,11.5);
+    \draw (8.25,13) to[short] (8.25,11.5);
+    \draw (4.75,13) to[european resistor] (6.5,14.75);
+    \draw (6.5,14.75) to[european resistor] (7.5,13.75);
+    \draw (7.5,13.75) to[L ] (8.25,13);
+    \draw (3.75,14.75) to[short] (6.5,14.75);
+    \draw  (7.5,13.25) circle (1cm);
+    \node [font=\normalsize] at (4.75,12.75) {$b$};
+    \node [font=\normalsize] at (8.5,12.75) {$c$};
+    \node [font=\normalsize] at (5.5,13.75) {$z_1$};
+    \node [font=\normalsize] at (6.75,14.5) {$z_2$};
+    \node [font=\normalsize] at (7.25,13.5) {$CC$};
+    \node [font=\normalsize] at (7.5,12.5) {$PC$};
+    \node [font=\normalsize] at (8.25,14.75) {$z_2= (100 + J0)\Omega$};
+    \node [font=\scriptsize] at (4.75,14.25) {$z_1=(100 + J0)\Omega$};
+    \node [font=\small] at (3,14.25) {$3 - Phase$};
+    \node [font=\small] at (3,14) {$Balanced$};
+    \node [font=\small] at (3,13.75) {$Supply$};
+    \node [font=\small] at (3,13) {$400 Volts$};
+    \node [font=\small] at (3,12.75) {$50 Hz$};
+    \node [font=\normalsize] at (6.5,15) {$a$};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+    \begin{multicols}{4}
+    \begin{enumerate}
+        \item $0$
+        \item $1600 \text{ Watt}$
+        \item $800 \text{ Watt}$
+        \item $400 \text{ Watt}$
+    \end{enumerate}
+    \end{multicols}
+    
+\end{enumerate}
+
+
+
+\end{document}
