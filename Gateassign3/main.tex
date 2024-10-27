@@ -1,0 +1,561 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{amsmath}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}  
+\usepackage{circuitikz}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{GATE PH-2012}
+\author{AI24BTECH11001 Abhijeet Kumar
+}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=14]
+    \item In a central force field, the trajectory of a particle of mass $m$ and angular momentum $L$ in plane 
+    polar coordinates is given by, 
+    \begin{align*}
+        \frac{1}{r}= \frac{m}{L^2} \brak{1 + \epsilon\cos\theta}
+    \end{align*}
+    where $\epsilon$ is the eccentricity of the particle's motion. Which one of the following choices for $\epsilon$ gives rise to a parabolic trajectory?
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\epsilon>0$
+            \item $\epsilon=0$
+            \item $0<\epsilon<1$
+            \item $\epsilon>1$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Identify the CORRECT energy band diagram for Silicon doped with Arsenic. Here CB, VB, $E_D$ and 
+    $E_F$ are conduction band, valence band, impurity level and Fermi level, respectively.
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item  \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [short] (3.5,8.75) -- (3.5,4.75);
+\draw [short] (3.5,7.75) -- (7,7.75);
+\draw [short] (3.5,5.75) -- (7,5.75);
+\draw [dashed] (3.5,6.75) -- (7,6.75);
+\draw [short] (4.25,8.5) -- (4,7.75);
+\draw [short] (4.5,8.5) -- (4.25,7.75);
+\draw [short] (4.75,8.5) -- (4.5,7.75);
+\draw [short] (4,8.5) -- (3.75,7.75);
+\draw [short] (3.75,8.5) -- (3.5,7.75);
+\draw [short] (5,8.5) -- (4.75,7.75);
+\draw [short] (5.5,8.5) -- (5.25,7.75);
+\draw [short] (5.25,8.5) -- (5,7.75);
+\draw [short] (5.75,8.5) -- (5.5,7.75);
+\draw [short] (6,8.5) -- (5.75,7.75);
+\draw [short] (6.5,8.5) -- (6.25,7.75);
+\draw [short] (6.25,8.5) -- (6,7.75);
+\draw [short] (6.75,8.5) -- (6.5,7.75);
+\draw [short] (4,5.75) -- (3.75,5);
+\draw [short] (4.25,5.75) -- (4,5);
+\draw [short] (3.75,5.75) -- (3.5,5);
+\draw [short] (4.5,5.75) -- (4.25,5);
+\draw [short] (4.75,5.75) -- (4.5,5);
+\draw [short] (5.25,5.75) -- (5,5);
+\draw [short] (5,5.75) -- (4.75,5);
+\draw [short] (5.5,5.75) -- (5.25,5);
+\draw [short] (5.75,5.75) -- (5.5,5);
+\draw [short] (6,5.75) -- (5.75,5);
+\draw [short] (6.25,5.75) -- (6,5);
+\draw [short] (6.5,5.75) -- (6.25,5);
+\draw [short] (6.75,5.75) -- (6.5,5);
+\node [font=\normalsize] at (7,5.25) {$\textbf{VB}$};
+\node [font=\normalsize] at (7,8.25) {$\textbf{CB}$};
+\draw [dashed] (3.5,7.5) -- (7,7.5);
+\node [font=\small] at (7.25,7.5) {$\textbf{$E_D$}$};
+\node [font=\small] at (7,6.5) {$\textbf{$E_F$}$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+            \item  \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [short] (3.5,8.75) -- (3.5,4.75);
+\draw [short] (3.5,7.75) -- (7,7.75);
+\draw [short] (3.5,5.75) -- (7,5.75);
+\draw [dashed] (3.5,7.25) -- (7,7.25);
+\draw [short] (4.25,8.5) -- (4,7.75);
+\draw [short] (4.5,8.5) -- (4.25,7.75);
+\draw [short] (4.75,8.5) -- (4.5,7.75);
+\draw [short] (4,8.5) -- (3.75,7.75);
+\draw [short] (3.75,8.5) -- (3.5,7.75);
+\draw [short] (5,8.5) -- (4.75,7.75);
+\draw [short] (5.5,8.5) -- (5.25,7.75);
+\draw [short] (5.25,8.5) -- (5,7.75);
+\draw [short] (5.75,8.5) -- (5.5,7.75);
+\draw [short] (6,8.5) -- (5.75,7.75);
+\draw [short] (6.5,8.5) -- (6.25,7.75);
+\draw [short] (6.25,8.5) -- (6,7.75);
+\draw [short] (6.75,8.5) -- (6.5,7.75);
+\draw [short] (4,5.75) -- (3.75,5);
+\draw [short] (4.25,5.75) -- (4,5);
+\draw [short] (3.75,5.75) -- (3.5,5);
+\draw [short] (4.5,5.75) -- (4.25,5);
+\draw [short] (4.75,5.75) -- (4.5,5);
+\draw [short] (5.25,5.75) -- (5,5);
+\draw [short] (5,5.75) -- (4.75,5);
+\draw [short] (5.5,5.75) -- (5.25,5);
+\draw [short] (5.75,5.75) -- (5.5,5);
+\draw [short] (6,5.75) -- (5.75,5);
+\draw [short] (6.25,5.75) -- (6,5);
+\draw [short] (6.5,5.75) -- (6.25,5);
+\draw [short] (6.75,5.75) -- (6.5,5);
+\node [font=\normalsize] at (7,5.25) {$\textbf{VB}$};
+\node [font=\normalsize] at (7,8.25) {$\textbf{CB}$};
+\draw [dashed] (3.5,7.5) -- (7,7.5);
+\node [font=\small] at (7.25,7.5) {$\textbf{$E_D$}$};
+\node [font=\small] at (7,7) {$\textbf{$E_F$}$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+            \item  \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [short] (3.5,8.75) -- (3.5,4.75);
+\draw [short] (3.5,7.75) -- (7,7.75);
+\draw [short] (3.5,5.75) -- (7,5.75);
+\draw [dashed] (3.5,6.25) -- (7,6.25);
+\draw [short] (4.25,8.5) -- (4,7.75);
+\draw [short] (4.5,8.5) -- (4.25,7.75);
+\draw [short] (4.75,8.5) -- (4.5,7.75);
+\draw [short] (4,8.5) -- (3.75,7.75);
+\draw [short] (3.75,8.5) -- (3.5,7.75);
+\draw [short] (5,8.5) -- (4.75,7.75);
+\draw [short] (5.5,8.5) -- (5.25,7.75);
+\draw [short] (5.25,8.5) -- (5,7.75);
+\draw [short] (5.75,8.5) -- (5.5,7.75);
+\draw [short] (6,8.5) -- (5.75,7.75);
+\draw [short] (6.5,8.5) -- (6.25,7.75);
+\draw [short] (6.25,8.5) -- (6,7.75);
+\draw [short] (6.75,8.5) -- (6.5,7.75);
+\draw [short] (4,5.75) -- (3.75,5);
+\draw [short] (4.25,5.75) -- (4,5);
+\draw [short] (3.75,5.75) -- (3.5,5);
+\draw [short] (4.5,5.75) -- (4.25,5);
+\draw [short] (4.75,5.75) -- (4.5,5);
+\draw [short] (5.25,5.75) -- (5,5);
+\draw [short] (5,5.75) -- (4.75,5);
+\draw [short] (5.5,5.75) -- (5.25,5);
+\draw [short] (5.75,5.75) -- (5.5,5);
+\draw [short] (6,5.75) -- (5.75,5);
+\draw [short] (6.25,5.75) -- (6,5);
+\draw [short] (6.5,5.75) -- (6.25,5);
+\draw [short] (6.75,5.75) -- (6.5,5);
+\node [font=\normalsize] at (7,5.25) {$\textbf{VB}$};
+\node [font=\normalsize] at (7,8.25) {$\textbf{CB}$};
+\draw [dashed] (3.5,6) -- (7,6);
+\node [font=\small] at (7.25,6) {$\textbf{$E_D$}$};
+\node [font=\small] at (7,6.5) {$\textbf{$E_F$}$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+            \item  \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [short] (3.5,8.75) -- (3.5,4.75);
+\draw [short] (3.5,7.75) -- (7,7.75);
+\draw [short] (3.5,5.75) -- (7,5.75);
+\draw [dashed] (3.5,6.75) -- (7,6.75);
+\draw [short] (4.25,8.5) -- (4,7.75);
+\draw [short] (4.5,8.5) -- (4.25,7.75);
+\draw [short] (4.75,8.5) -- (4.5,7.75);
+\draw [short] (4,8.5) -- (3.75,7.75);
+\draw [short] (3.75,8.5) -- (3.5,7.75);
+\draw [short] (5,8.5) -- (4.75,7.75);
+\draw [short] (5.5,8.5) -- (5.25,7.75);
+\draw [short] (5.25,8.5) -- (5,7.75);
+\draw [short] (5.75,8.5) -- (5.5,7.75);
+\draw [short] (6,8.5) -- (5.75,7.75);
+\draw [short] (6.5,8.5) -- (6.25,7.75);
+\draw [short] (6.25,8.5) -- (6,7.75);
+\draw [short] (6.75,8.5) -- (6.5,7.75);
+\draw [short] (4,5.75) -- (3.75,5);
+\draw [short] (4.25,5.75) -- (4,5);
+\draw [short] (3.75,5.75) -- (3.5,5);
+\draw [short] (4.5,5.75) -- (4.25,5);
+\draw [short] (4.75,5.75) -- (4.5,5);
+\draw [short] (5.25,5.75) -- (5,5);
+\draw [short] (5,5.75) -- (4.75,5);
+\draw [short] (5.5,5.75) -- (5.25,5);
+\draw [short] (5.75,5.75) -- (5.5,5);
+\draw [short] (6,5.75) -- (5.75,5);
+\draw [short] (6.25,5.75) -- (6,5);
+\draw [short] (6.5,5.75) -- (6.25,5);
+\draw [short] (6.75,5.75) -- (6.5,5);
+\node [font=\normalsize] at (7,5.25) {$\textbf{VB}$};
+\node [font=\normalsize] at (7,8.25) {$\textbf{CB}$};
+\draw [dashed] (3.5,6) -- (7,6);
+\node [font=\small] at (7.25,6) {$\textbf{$E_D$}$};
+\node [font=\small] at (7,6.75) {\textbf{}};
+\node [font=\small] at (6.75,7) {$\textbf{$E_F$}$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+        \end{enumerate}
+    \end{multicols}
+
+    \item The first Stokes line of a rotational Raman spectrum is observed at $12.96 cm^{-1}$. Considering the 
+    rigid rotor approximation, the rotational constant is given by
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $6.48 cm^{-1}$
+            \item $3.24 cm^{-1}$
+            \item $2.16 cm^{-1}$
+            \item $1.62 cm^{-1}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item The total energy, $E$ of an ideal non-relativistic Fermi gas in three dimensions is given by $E \propto \frac{N^{\frac{5}{3}}}{V^{\frac{2}{3}}}$ where $N$ is the number of particles and $V$ is the volume of the gas.
+    Identify the CORRECT equation of state ($P$ being the pressure),
+     \begin{multicols}{4}
+        \begin{enumerate}
+            \item $PV= \frac{1}{3}E$
+            \item $PV= \frac{2}{3}E$
+            \item $PV=E$
+            \item $PV= \frac{5}{3}E$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Consider the wavefunction $\Psi=\psi\brak{\overrightarrow{r_1},\overrightarrow{r_2}}\chi_S$ for a fermionic system consisting of two spin-half particles. The spatial part of the wavefunction is given by. 
+    \begin{align*}
+        \psi \brak{\overrightarrow{r_1},\overrightarrow{r_2}} = \frac{1}{\sqrt{2}} \sbrak{ \phi_1(\overrightarrow{r_1})\phi_2(\overrightarrow{r_2}) + \phi_2(\overrightarrow{r_1})\phi_1(\overrightarrow{r_2})}
+    \end{align*}
+    where $\phi_1$ and $\phi_2$ are single particle states. The spin part $\chi_s$ of the wavefunction with spin states $\alpha \brak{\frac{+1}{2}}$ and $\alpha \brak{\frac{-1}{2}}$ should be
+     \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\frac{1}{\sqrt{2}} \brak{\alpha \beta + \beta \alpha}$
+            \item $\frac{1}{\sqrt{2}} \brak{\alpha \beta + \beta \alpha}$
+            \item $\alpha \alpha$
+            \item $\beta \beta$
+        \end{enumerate}
+    \end{multicols}
+
+    \item The electric and the magnetic fields, $\overrightarrow{E} \brak{z,t}$ and $\overrightarrow{B} \brak{z,t}$ respectively corresponding to the scalar potential $\phi\brak{z,t}=0$ and vector potential $\overrightarrow{A} \brak{z,t} = \hat{i}tz$ are
+     \begin{multicols}{2}
+        \begin{enumerate}
+            \item $\overrightarrow{E} = \hat{i}z \text{ and } \overrightarrow{B} = -jt$
+            \item$\overrightarrow{E} = \hat{i}z \text{ and } \overrightarrow{B} = jt$
+            \item $\overrightarrow{E} = \hat{-i}z \text{ and } \overrightarrow{B} = -jt$
+            \item $\overrightarrow{E} = \hat{-i}z \text{ and } \overrightarrow{B} = jt$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Consider the following OP-AMP circuit.
+    \begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (4.5,7.5) node[op amp,scale=1, yscale=-1 ] (opamp2) {};
+\draw (opamp2.+) to[short] (3,8);
+\draw  (opamp2.-) to[short] (3,7);
+\draw (5.7,7.5) to[short](6,7.5);
+\draw (5.5,7.5) to[short, -o] (6.25,7.5) ;
+\draw (3.75,8) to[short, -o] (1.25,8) ;
+\draw (3.25,7) to[R] (1.5,7);
+\draw (1.75,7) to[short, -o] (1.25,7) ;
+\draw (4.75,7) to[short, -o] (4.75,6.25) ;
+\draw (3.25,7) to[R] (3.25,5.25);
+\draw (3.25,5.5) to (3.25,5.25) node[cground]{};
+\draw (4.75,8) to[short, -o] (4.75,8.75) ;
+\draw [short] (4.75,7) -- (4.75,7.25);
+\draw [short] (4.75,8.25) -- (4.75,7.75);
+\node [font=\small] at (4.5,9) {$\textbf{$+10V$}$};
+\node [font=\small] at (4.5,6) {$\textbf{$-10 V$}$};
+\node [font=\small] at (1,8) {$\textbf{$V_{in}$}$};
+\node [font=\small] at (6.25,7.25) {$\textbf{$V_{out}$}$};
+\node [font=\small] at (0.75,7) {$\textbf{$+5 V$}$};
+\node [font=\small] at (2.75,6) {$\textbf{1 k$\Omega$}$};
+\node [font=\small] at (1.75,6.5) {$\textbf{4 k$\Omega$}$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    Which one of the following correctly represents the output $V_{out}$ corresponding to the input $V_{in}$?
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item  \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (1.25,10.25) -- (1.25,7.25);
+\draw [short] (1.25,6) -- (1.25,3);
+\draw [dashed] (1.25,8.75) -- (5.5,8.75);
+\draw [dashed] (1.25,4.5) -- (5.5,4.5);
+\draw [short] (1.25,8.75) -- (5.5,10);
+\draw [dashed] (1.25,9) -- (5.5,9);
+\draw [->, >=Stealth] (5.25,8.75) -- (6,8.75);
+\draw [->, >=Stealth] (5.25,4.5) -- (6,4.5);
+\draw [dashed] (1.25,10) -- (5.25,10);
+\draw [dashed] (2,10) -- (2,5.75);
+\draw [short] (2,5.75) -- (2,3.25);
+\draw [short] (2,5.75) -- (5.5,5.75);
+\draw [short] (1.25,3.25) -- (2,3.25);
+\node [font=\LARGE] at (5,7.25) {};
+\node [font=\normalsize] at (0,9.5) {$V_{in}$};
+\node [font=\normalsize] at (0.5,5) {$V_{out}$};
+\node [font=\normalsize] at (5.75,8.5) {$t$};
+\node [font=\normalsize] at (5.75,4.25) {$t$};
+\node [font=\normalsize] at (0.75,5.75) {$+10 V$};
+\node [font=\normalsize] at (0.75,3.25) {$-10 V$};
+\node [font=\normalsize] at (0.75,8.75) {$0 V$};
+\node [font=\normalsize] at (0.75,10) {$+5 V$};
+\node [font=\normalsize] at (0.75,9.25) {$+1 V$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+            \item \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw [short] (1.25,10.25) -- (1.25,7.25);
+\draw [short] (1.25,6) -- (1.25,3);
+\draw [dashed] (1.25,8.75) -- (5.5,8.75);
+\draw [dashed] (1.25,4.5) -- (5.5,4.5);
+\draw [short] (1.25,8.75) -- (5.5,10);
+\draw [dashed] (1.25,9) -- (5.5,9);
+\draw [->, >=Stealth] (5.25,8.75) -- (6,8.75);
+\draw [->, >=Stealth] (5.25,4.5) -- (6,4.5);
+\draw [dashed] (1.25,10) -- (5.25,10);
+\draw [dashed] (2,10) -- (2,5.75);
+\draw [short] (2,5.75) -- (2,3.25);
+\draw [short] (2,3.25) -- (5.5,3.25);
+\draw [short] (1.25,5.75) -- (2,5.75);
+\node [font=\LARGE] at (5,7.25) {};
+\node [font=\normalsize] at (0,9.5) {$V_{in}$};
+\node [font=\normalsize] at (0.5,5) {$V_{out}$};
+\node [font=\normalsize] at (5.75,8.5) {$t$};
+\node [font=\normalsize] at (5.75,4.25) {$t$};
+\node [font=\normalsize] at (0.75,5.75) {$+10 V$};
+\node [font=\normalsize] at (0.75,3.25) {$-10 V$};
+\node [font=\normalsize] at (0.75,8.75) {$0 V$};
+\node [font=\normalsize] at (0.75,10) {$+5 V$};
+\node [font=\normalsize] at (0.75,9.25) {$+1 V$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+            \item \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw [short] (1.25,10.25) -- (1.25,7.25);
+\draw [short] (1.25,6) -- (1.25,3);
+\draw [dashed] (1.25,8.75) -- (5.5,8.75);
+\draw [dashed] (1.25,4.5) -- (5.5,4.5);
+\draw [short] (1.25,8.75) -- (5.5,10);
+\draw [->, >=Stealth] (5.25,8.75) -- (6,8.75);
+\draw [->, >=Stealth] (5.25,4.5) -- (6,4.5);
+\draw [dashed] (1.25,10) -- (5.25,10);
+\draw [dashed] (5.5,10) -- (5.5,5.75);
+\draw [short] (5.5,5.75) -- (5.5,3.25);
+\draw [short] (2,5.75) -- (5.5,5.75);
+\draw [short] (1.25,5.75) -- (2,5.75);
+\node [font=\LARGE] at (5,7.25) {};
+\node [font=\normalsize] at (0,9.5) {$V_{in}$};
+\node [font=\normalsize] at (0.5,5) {$V_{out}$};
+\node [font=\normalsize] at (5.75,8.5) {$t$};
+\node [font=\normalsize] at (5.75,4.25) {$t$};
+\node [font=\normalsize] at (0.75,5.75) {$+10 V$};
+\node [font=\normalsize] at (0.75,3.25) {$-10 V$};
+\node [font=\normalsize] at (0.75,8.75) {$0 V$};
+\node [font=\normalsize] at (0.75,10) {$+5 V$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+            \item \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw [short] (1.25,10.25) -- (1.25,7.25);
+\draw [short] (1.25,6) -- (1.25,3);
+\draw [dashed] (1.25,8.75) -- (5.5,8.75);
+\draw [dashed] (1.25,4.5) -- (5.5,4.5);
+\draw [short] (1.25,8.75) -- (5.5,10);
+\draw [->, >=Stealth] (5.25,8.75) -- (6,8.75);
+\draw [->, >=Stealth] (5.25,4.5) -- (6,4.5);
+\draw [dashed] (1.25,10) -- (5.25,10);
+\draw [dashed] (5.5,10) -- (5.5,5.75);
+\draw [short] (5.5,5.75) -- (5.5,3.25);
+\draw [short] (2,3.25) -- (5.5,3.25);
+\draw [short] (1.25,3.25) -- (2,3.25);
+\node [font=\LARGE] at (5,7.25) {};
+\node [font=\normalsize] at (0,9.5) {$V_{in}$};
+\node [font=\normalsize] at (0.5,5) {$V_{out}$};
+\node [font=\normalsize] at (5.75,8.5) {$t$};
+\node [font=\normalsize] at (5.75,4.25) {$t$};
+\node [font=\normalsize] at (0.75,5.75) {$+10 V$};
+\node [font=\normalsize] at (0.75,3.25) {$-10 V$};
+\node [font=\normalsize] at (0.75,8.75) {$0 V$};
+\node [font=\normalsize] at (0.75,10) {$+5 V$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+        \end{enumerate}
+        
+    \end{multicols}
+
+
+    \item Deuteron has only one bound state with spin parity $1^+$ isospin $0$ and electric quadrupole moment 
+    $0.286 efm^2$. These data suggest that the nuclear forces are having 
+    \begin{enumerate}
+        \item only spin and isospin dependence
+        \item no spin dependence and no tensor components
+        \item spin dependence but no tensor components
+        \item spin dependence along with tensor components
+    \end{enumerate}
+
+    \item A particle of unit mass moves along the x-axis under the influence of a potential, $V\brak{x} = x\brak{x-2}^2$. The particle is found to be in stable equilibrium at the point $x=2$. The time period of oscillation of the particle is
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\frac{\pi}{2}$
+            \item $\pi$
+            \item $\frac{3 \pi}{2}$
+            \item $2\pi$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Which one of the following CANNOT be explained by considering a harmonic approximation for the lattice vibrations in solids?
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item Debye's $T^3$ law
+            \item Dulong Petit's law
+            \item Optical branches in lattices
+            \item Thermal expansion
+        \end{enumerate}
+    \end{multicols}
+
+    \item A particle is constrained to move in a truncated harmonic potential well $\brak{x > 0}$ as shown in the 
+    figure. Which one of the following statements is CORRECT?
+    \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+\begin{scope}[rotate around={-135:(9,12.75)}]
+\draw[domain=9:12.25,samples=100,smooth] plot (\x,{0.4*sin(1*\x r -9 r ) +12.75});
+\end{scope}
+\draw (6.75,10.5) to[short] (10,10.5);
+\draw (6.75,10.5) to[short] (6.75,13.5);
+\draw [->, >=Stealth] (6.75,13.25) -- (6.75,13.75);
+\draw [->, >=Stealth] (9.75,10.5) -- (10,10.5);
+\node [font=\normalsize] at (10,10.25) {$x$};
+\node [font=\normalsize] at (6.25,12.75) {$V(x)$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+    
+    \begin{enumerate}
+        \item The parity of the first excited state is even 
+        \item The parity of the ground state is even 
+        \item The ground state energy is $\frac{1}{2} \hbar \omega$
+        \item The first excited state energy is $\frac{7}{2} \hbar \omega$
+    \end{enumerate}
+
+    \item The number of independent components of the symmetric tensor $A_{ij}$ with indices $i, j = 1, 2, 3$ is
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $1$
+            \item $3$
+            \item $6$
+            \item $9$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Consider a system in the unperturbed state described by the Hamiltonian $H_0 = \begin{pmatrix} 0 & 1 \\ 0 & 1 \end{pmatrix}$. The system is subjected to a perturbation of the form $H' = \begin{pmatrix} \delta & \delta \\ \delta & \delta \end{pmatrix}$, where $\delta << 1$. The energy eigenvalues of the perturbed system using the first order perturbation approximation are 
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $1 \text{ and } \brak{1+2\delta}$
+            \item $\brak{1+\delta} \text{ and } \brak{1-\delta}$
+            \item $\brak{1+2\delta} \text{ and } \brak{1-2\delta}$
+            \item $\brak{1+\delta} \text{ and } \brak{1-2\delta}$
+        \end{enumerate}
+    \end{multicols}
+\end{enumerate}
+\end{document}
