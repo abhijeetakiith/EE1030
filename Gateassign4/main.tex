@@ -1,0 +1,356 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{amsmath}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}  
+\usepackage{circuitikz}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{GATE XE - 2015}
+\author{AI24BTECH11001 Abhijeet Kumar
+}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=27]
+    \item An open glass capillary tube of $2 mm$ bore is lowered into a cistern containing mercury (density = $13600 kg/m^3$) as shown in the figure. Given that the contact angle between mercury and glass = $140\circ$, surface tension coefficient = $0.484 N/m$ and gravitational acceleration = $9.81 m/s^2$, the depression of mercury in the capillary tube below the free surface in the cistern, in mm, is
+
+    \begin{figure}[H]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\Huge]
+    \draw[domain=0.5:3.75,samples=100,smooth, line width=0.8pt] plot (\x,{0.6*sin(1*\x r -0.5 r ) +4.5});
+    \draw [line width=0.8pt, short] (3.5,17) -- (3.75,3.5);
+    \draw [line width=0.8pt, short] (0.25,16.75) -- (0.5,3.25);
+    \draw [line width=0.8pt, short] (-8.5,12.25) -- (-8,0.25);
+    \draw [line width=0.8pt, short] (-8,0.25) -- (12.5,0.25);
+    \draw [line width=0.8pt, short] (11.75,12.25) -- (12.25,0.25);
+    \draw [line width=0.8pt, short] (-8.25,10) -- (0.5,10);
+    \draw [line width=0.8pt, short] (3.75,10) -- (12,10);
+    \draw [short] (-8.25,8.75) -- (-6,10);
+    \draw [short] (-8.25,7.75) -- (-4.75,9.75);
+    \draw [short] (-8.25,6.75) -- (-3,10);
+    \draw [short] (-8.25,5.75) -- (-2,9.75);
+    \draw [short] (-8,4.75) -- (-0.25,10);
+    \draw [short] (-8,3.5) -- (0.25,9.25);
+    \draw [short] (-8,2.25) -- (0.5,8.25);
+    \draw [short] (-8,1.25) -- (0.5,7);
+    \draw [short] (-7.75,0.25) -- (0.5,5.75);
+    \draw [short] (3.75,9) -- (5.25,10);
+    \draw [short] (3.75,7.75) -- (6.75,10);
+    \draw [short] (-5.5,0.25) -- (1.75,5);
+    \draw [short] (3.75,6.25) -- (9,10);
+    \draw [short] (-3.5,0.25) -- (3.25,4.5);
+    \draw [short] (3.75,4.75) -- (11,10);
+    \draw [short] (-1.25,0.25) -- (12,9);
+    \draw [short] (1.25,0.5) -- (12,7.5);
+    \draw [short] (3,0.25) -- (12,6);
+    \draw [short] (5.25,0.25) -- (12,4.5);
+    \draw [short] (7.5,0.25) -- (12.25,3.25);
+    \draw [short] (9.75,0.25) -- (12.25,1.75);
+    \draw [->, >=Stealth] (5.25,14) -- (3.75,12.75);
+    \draw [->, >=Stealth] (-2,12) -- (-0.75,8.5);
+    \draw [line width=0.7pt, short] (-11.5,5) -- (2.75,5.25);
+    \draw [<->, >=Stealth] (-10.25,10) -- (-10,5);
+    \draw [short] (-11.5,10) -- (-9.5,10);
+    \draw [short] (-2.75,12) -- (-2,12);
+    \draw [->, >=Stealth] (2.75,10.5) -- (3,5.25);
+    \draw [short] (2.75,10.5) -- (4.75,11.25);
+    \node [font=\Huge] at (-4.5,12) {\textbf{Mercury}};
+    \node [font=\Huge] at (1.75,6.75) {\textbf{Air}};
+    \node [font=\Huge] at (6.25,11.25) {\textbf{Meniscus}};
+    \node [font=\Huge] at (-12.5,7.5) {\textbf{Depression}};
+    \node [font=\Huge] at (6.5,16.25) {\textbf{Glass}};
+    \node [font=\Huge] at (6.5,15.5) {\textbf{capillary}};
+    \node [font=\Huge] at (6.5,14.75) {\textbf{tube}};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+
+    \item Consider a combined forced-free vortex. The central region with radius $R$ and angular velocity $\omega$ is the forced vortex and the rest is the free vortex. The pressure at the edge of the combined vortex is $p_o$. If the density of the fluid is $p$, the pressure at the center of the combined vortex is
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $p_o - p\omega^2 R^2$
+            \item $p_o - \frac{1}{2}p\omega^2 R^2$
+            \item $p_o + \frac{1}{2}p\omega^2 R^2$
+            \item $p_o + p\omega^2 R^2$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Which one of the following is true at the point of separation of a boundary layer.
+    \begin{enumerate}
+        \item Transition occurs from laminar to turbulent flow
+        \item The flow relaminarizes from turbulent regime
+        \item The shear stress vanishes
+        \item The relation between stress and rate of strain ceases to be linear
+    \end{enumerate}
+
+    \item A certain fluid flow phenomenon is described by Reynolds, Weber and Ohnesorge numbers. The Weber and Ohnesorge numbers are defined as $We = \frac{pU^2L}{\sigma}$ and $Oh =\frac{\mu}{\sqrt{p\sigma L}} $ respectively, where $\sigma$ is the surface tension, $p$ is the density, $\mu$ is the dynamic viscosity, $U$ is the velocity and $L$ is the characteristic dimension. If $Re$ denotes the Reynolds number, which of the following relations is true?
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $We=Oh Re^2$
+            \item $We=Oh^2 Re^2$
+            \item $We=Oh^2 Re$
+            \item $We=Oh Re$
+        \end{enumerate}
+    \end{multicols}
+
+    \item A rectangular boat $6$ m wide and $15$ m long (dimension perpendicular to the plane of the figure) has a draught of $2$ m. The side view of the boat is as shown in the figure. The centre of gravity $G$ of the boat is at the free surface level. The metacentric height of the boat in m is 
+    \begin{figure}[H]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\Large]
+    \draw  (-0.5,8) rectangle (6.75,3.75);
+    \draw [short] (-1.5,6.25) -- (8,6.25);
+    \draw [dashed] (3,8.5) -- (3,3);
+    \draw [short] (-0.5,9) -- (-0.5,8.5);
+    \draw [short] (6.75,9) -- (6.75,8.5);
+    \draw [<->, >=Stealth] (-0.5,8.75) -- (6.75,8.75);
+    \draw [<->, >=Stealth] (-1.25,6.25) -- (-1.25,3.75);
+    \draw [short] (-1.5,3.75) -- (-1,3.75);
+    \node [font=\Large] at (2.75,9) {Width = 6m};
+    \node [font=\Large] at (-2.25,5.25) {Draught};
+    \node [font=\Large] at (-2.5,4.75) {= 2 m};
+    \node [font=\Large] at (2.75,6.5) {G};
+    \draw [short] (7.25,6.75) -- (7.5,6.25);
+    \draw [short] (7.75,6.75) -- (7.5,6.25);
+    \draw [short] (7.25,6.75) -- (7.75,6.75);
+    \draw (7.5,6.25) to (7.5,6) node[ground]{};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $-1.0$
+            \item $0.5$
+            \item $1.5$
+            \item $2.0$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Water drains out into atmosphere from a small orifice located at the bottom of a large open tank. If the initial height of the water column is $H$, the time taken to empty the tank is proportional to
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $H^{\frac{1}{2}}$
+            \item $H$
+            \item $H^{\frac{3}{2}}$
+            \item $H^{2}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Consider a two-dimensional velocity field given by $\overrightarrow{V} = \pi y \hat{i} - \pi x \hat{j}$ where $\hat{i}$ and $\hat{j}$ are the unit vectors in the directions of the rectangular Cartesian coordinates $x$ and $y$, respectively. A fluid particle is located initially at the point $\brak{-1,1}$. Its position after unit time is
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\brak{-2,-2}$
+            \item $\brak{1,-1}$
+            \item $\brak{1,1}$
+            \item $\brak{3,-1}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item The figure shows a reducing area conduit carrying water. The pressure $p$ and velocity $V$ are uniform across sections $1$ and $2$. The density of water is $1000$ kg/$m^3$. If the total loss of head due to friction is just equal to the loss of potential head between the inlet and the outlet, then $V_2$ in $m/s$ will be
+
+    \begin{figure}[H]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\large]
+    \begin{scope}[rotate around={-40.25:(-3.5,12.75)}]
+    \draw[domain=-3.5:3,samples=100,smooth] plot (\x,{0.7*sin(1*\x r +3.5 r ) +12.75});
+    \end{scope}
+    \begin{scope}[rotate around={-34.25:(-4.25,11.5)}]
+    \draw[domain=-4.25:2.5,samples=100,smooth] plot (\x,    {0.7*sin(1*\x r +3.75 r ) +11.5});
+    \end{scope}
+    \draw [dashed] (-4,13.25) -- (-4,10.75);
+    \draw [short] (-4.5,12.75) -- (-3.5,12.75);
+    \draw [short] (-4.75,11.75) -- (-4,11.75);
+    \draw [dashed] (-4.5,12.25) -- (2,12);
+    \draw [->, >=Stealth] (-5.75,12.25) -- (-4,12.25);
+    \draw [<->, >=Stealth] (0.75,12) -- (0.75,8.75);
+    \draw [->, >=Stealth] (1,8.5) -- (2.5,8.5);
+    \draw [dashed] (0.75,8.75) -- (0.75,8);
+    \node [font=\Large] at (1,10.5) {$\textbf{z}$};
+    \node [font=\large] at (-4,10.25) {$\textbf{Inlet}$};
+    \node [font=\large] at (-4,10.75) {$\textbf{1}$};
+    \node [font=\large] at (0.75,7.75) {$\textbf{2}$};
+    \node [font=\large] at (0.75,7.25) {$\textbf{Outlet}$};
+    \node [font=\large] at (-6.5,12.5) {$\textbf{$V_1 = 2 m/s$}$};
+    \node [font=\large] at (-6.75,12) {$\textbf{$p_1 = 130  kPa$}$};
+    \node [font=\large] at (3,8.5) {$\textbf{$V_2$}$};
+    \node [font=\large] at (3,8) {$\textbf{$p_2 = 100 kPa$}$};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+
+    \item A fluid enters a control volume through an inlet port (denoted with subscript $'i'$) and leaves through two outlet ports (denoted with subscripts $'o,1'$ and $'o,2'$) as shown in the figure. The velocities may be assumed to be uniform across the ports. The rate of change of mass in the control volume in $kg/s$, at the instant shown in the figure, is
+
+    \begin{figure}[H]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\small]
+    
+    \draw (3.25,11.5) to[short] (8.75,11.5);
+    \draw (8.75,11.5) to[short] (8.75,8);
+    \draw (3.25,11.5) to[short] (3.25,10.25);
+    \node at (3.25,10.25) [circ] {};
+    \draw [dashed] (3.25,10.25) -- (3.25,8.75);
+    \node at (3.25,8.75) [circ] {};
+    \node at (8.75,8) [circ] {};
+    \draw (3.25,8.75) to[short] (3.25,6.75);
+    \node at (3.25,6.75) [circ] {};
+    \draw [dashed] (8.75,8) -- (8.75,7.25);
+    \draw [dashed] (3.25,6.75) -- (3.25,5.75);
+    \draw (3.25,5.75) to[short] (8.75,5.75);
+    \node at (8.75,7.5) [circ] {};
+    \draw (8.75,7.5) to[short] (8.75,5.75);
+    \draw [dashed] (8.75,7.75) -- (11,7.75);
+    \draw (8.75,8) to[short] (8.25,8);
+    \draw (8.75,7.5) to[short] (8.25,7.5);
+    \draw [<->, >=Stealth] (8.5,8) -- (8.5,7.5);
+    \draw [->, >=Stealth] (8.75,7.75) -- (10.75,8.25);
+    \draw [->, >=Stealth] (9.5,8.5) -- (9.75,8);
+    \draw [->, >=Stealth] (10.25,7.25) -- (10.25,7.75);
+    \draw [dashed] (3.25,9.5) -- (1,9.5);
+    \draw [short] (3.25,9.5) -- (2.5,10);
+    \draw [->, >=Stealth] (1.25,10.75) -- (2.5,10);
+    \draw [dashed] (3.25,6.25) -- (1,6.25);
+    \draw [->, >=Stealth] (3.25,6.25) -- (1,7);
+    \draw [short] (3.25,10.25) -- (4,10.25);
+    \draw [short] (3.25,8.75) -- (4,8.75);
+    \draw [<->, >=Stealth] (3.75,10.25) -- (3.75,8.75);
+    \draw [short] (3.25,6.75) -- (4,6.75);
+    \draw [<->, >=Stealth] (3.75,6.75) -- (3.75,5.75);
+    \node [font=\small] at (1.5,11) {$\rho=5.5 \, \frac{\text{kg}}{\text{m}^{3}}$};
+    \node [font=\small] at (2,10.5) {$V_i=3.0 \,    \frac{\text{m}}{\text{s}}$};
+    \node [font=\small] at (2,9.75) {$40^\circ$};
+    \node [font=\small] at (2,9.25) {Inlet};
+    \node [font=\small] at (1.25,7.75) {$\rho_{o,1}=5.0 \, \frac{\text{kg}}{\text{m}^{3}}$};
+    \node [font=\small] at (2,7.25) {$v_{o,1}=2.0 \, \frac{\text{m}}{\text{s}}$};
+    \node [font=\small] at (2,6.5) {$30^\circ$};
+    \node [font=\small] at (2,6) {Outlet-1};
+    \node [font=\small] at (4.5,9.5) {$A_i=0.20 \, \text{m}^{2}$};
+    \node [font=\small] at (10,9) {$\rho_{o,2}=5.0 \, \frac{\text{kg}}{\text{m}^{3}}$};
+    \node [font=\small] at (10,8.5) {$v_{o,2}=1.0 \, \frac{\text{m}}{\text{s}}$};
+    \node [font=\small] at (10.25,8) {$20^\circ$};
+    \node [font=\small] at (10.5,7.25) {Outlet-2};
+    \node [font=\small] at (7.5,7.75) {$A_{o,1}=0.10 \, \text{m}^{2}$};
+    \node [font=\small] at (4.75,6.25) {$A_{i,1}=0.15 \, \text{m}^{2}$};
+    \end{circuitikz}
+    }%
+    \label{fig:my_label}
+    \end{figure}
+
+    \item The total discharge of water through a lawn sprinkler shown in the figure is one liter per minute. The velocity of the jet at each end, relative to the arm, is $27\pi m/s$. The density of water is $1000 kg/m^3$ and the length of each arm is $0.1 m$. If the frictional torque of the pivot is $\pi/36 mN.m$, the rotational speed, in revolutions per minute, of the sprinkler is
+    \begin{figure}[H]
+    \centering
+    \resizebox{0.5\textwidth}{!}{%
+    \begin{circuitikz}
+    \tikzstyle{every node}=[font=\LARGE]
+    \draw  (3.5,6.25) circle (2.25cm);
+    \draw  (3.5,6.25) circle (0.25cm);
+    \draw [short] (-0.5,6.5) -- (8,6.5);
+    \draw [short] (-1,6) -- (7.5,6);
+    \draw [short] (-1,7.75) -- (-1,6);
+    \draw [short] (-0.5,7.75) -- (-0.5,6.5);
+    \draw [short] (7.5,6) -- (7.5,4.5);
+    \draw [short] (8,6.5) -- (8,4.5);
+    \draw [->, >=Stealth] (6,6.25) -- (7.25,6.25);
+    \draw [->, >=Stealth] (7.75,5.75) -- (7.75,4.75);
+    \draw [->, >=Stealth] (-0.75,6.75) -- (-0.75,7.75);
+    \draw [->, >=Stealth] (0.75,6.25) -- (-0.25,6.25);
+    \draw [->, >=Stealth] (1.75,4.75) -- (2.5,5.5);
+    \draw [short] (1.75,4.75) -- (0.5,4.75);
+    \draw [->, >=Stealth] (5.5,8.75) -- (4.75,8);
+    \draw [->, >=Stealth] (3.75,8.5) -- (3.5,8.5);
+    \draw [->, >=Stealth] (3.5,4) -- (3.75,4);
+    \node [font=\Large] at (-0.25,4.75) {Pivot};
+    \node [font=\Large] at (6.5,9.5) {Direction};
+    \node [font=\Large] at (6.5,9) {of rotation};
+    \end{circuitikz}
+    }%
+
+    \label{fig:my_label}
+    \end{figure}
+
+    \item Consider a two-dimensional potential flow field with the radial and tangential velocity components, $v_{r} = \frac{m}{2\pi r}$ and $v_{\theta} = \frac{k}{2\pi r}$ respectively, where $m$ and $k$ are constants. The stream function is such that it increases along the direction of traverse of a line in the flow field if the flow is from left to right across that line. The stream function $\Psi$ for this flow field, with $\psi = 0$ at  $r = a$ and $\theta = 0$ , is
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $\frac{m \pi \theta}{2} + \frac{k \pi}{2} \log{\frac{r}{a}}$
+            \item $\frac{m \pi \theta}{2} - \frac{k \pi}{2} \log{\frac{r}{a}}$
+            \item $\frac{m  \theta}{2\pi} + \frac{k }{2\pi} \log{\frac{r}{a}}$
+            \item $\frac{m  \theta}{2\pi} - \frac{k }{2\pi} \log{\frac{r}{a}}$
+        \end{enumerate}
+        
+    \end{multicols}
+
+    \item A steady, two-dimensional, inviscid and incompressible flow field is described in rectangular Cartesian coordinates as $u = ax$ and $v=-ay$, where $u$ and $v$ are the components of the velocity vector in the $x$ and $y$ directions, respectively. Gravity acts along the negative y-direction. The pressure distribution, with the reference pressure taken as zero at the origin, with usual notation, is given by
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $-\frac{1}{2}p a^2 \brak{x^2 +xy +y^2} - pgy$
+            \item $-\frac{1}{2}p a^2 \brak{x^2 -xy +y^2} - pgy$
+            \item $-\frac{1}{2}p a^2 \brak{x^2 +y^2} - pgy$
+            \item $-\frac{1}{2}p a^2 \brak{x^2 - y^2} - pgy$
+        \end{enumerate}
+    \end{multicols}
+
+    
+    \item A cylinder of radius $0.1 m$ rotating clockwise about its own axis at an angular velocity of $100/\pi$ radians per second is placed in a cross-stream of air flowing at a velocity of $10 m/s$ from left to right. The density of air is $1.2 kg/m^3$. The lift force per unit length of the cylinder in $N/m$ is
+\end{enumerate}
+\end{document}
