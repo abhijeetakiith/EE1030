@@ -1,0 +1,347 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{amsmath}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}  
+\usepackage{circuitikz}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{GATE AE - 2019}
+\author{AI24BTECH11001 Abhijeet Kumar
+}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=53]
+    \item A propeller driven airplane has a gross take-off weight of $4905 N$ with a wing area of $6.84 m^2$ Assume that the wings are operating at the maximum $C_{L}^{\frac{3}{2}} / C_{D}$ of $13$, the propeller efficiency is $0.9$ and the specific fuel consumption of the engine is $0.76 kg/kW-hr$. Given that the density of air at sea level is $1.225kg/m^3$ and the acceleration due to gravity is $9.81 m/s^2$ the weight of the fuel required for an endurance of 18 hours at sea level is (round off to the nearest integer).
+
+    \item The design of an airpla is modified to increase the vertical tail area by $20 \%$ and decrease the moment arm from the aerodynamic centre of the vertical tail to the airplane centre of gravity by $20 \%$. Assuming all other factors remain unchanged, the ratio of the modified to the original directional static stability ( $C_{N_\beta}$ due to tail fin) is $\dots$ (round off to $2$ decimal places).
+
+    \item For a rocket engine, the velocity ratio $r$ is $\frac{V_a}{V_e}$, where $V_a$ is the vehicle velocity and $V_e$ is the exit velocity of the exhaust gases. Assume the flow to be optimally expanded through the nozzle. For $r = 2$, if $F$ is the thrust produced and $m$ is the mass flow rate of exhaust gases, then, $\frac{F}{mV_e}$ is $\dots$
+
+    \item The specific impulse of a rocket engine is $3000 Ns/kg$. The mass of the rocket at burnout is $1000 kg$. The propellant consumed in the process is $720 kg$. Assume all factors contributing to velocity loss to be negligible. The change in vehicle velocity $\Delta u$ is $\dots$ $km/s$ (round off to 2 decimal places).
+
+    \item The combustion products of a gas turbine engine can be assumed to be a calorically perfect gas with $\gamma = 1.2$. The pressure ratio across the turbine stage is $0.14$. The measured turbine inlet and exit stagnation temperatures are $1200 K$ and $900 K$, respectively. The total-to- total turbine efficiency is $\dots$ $\%$ (round off to the nearest integer).
+
+    \item The figure shows the velocity triangles for an axial compressor stage. The specific work input to the compressor stage is $\dots$ $kJ/kg$ (round off to $2$ decimal places).
+
+    \begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [line width=0.8pt, short] (-5,10.75) -- (-2,10.75);
+\draw [line width=0.8pt, short] (-5,10.75) -- (-4.5,12.75);
+\draw [line width=0.8pt, short] (-4.5,12.75) -- (-2,10.75);
+\draw [line width=0.8pt, short] (-5,10.75) -- (-3.75,12.75);
+\draw [line width=0.8pt, short] (-3.75,12.75) -- (-2,10.75);
+\draw [line width=0.3pt, ->, >=Stealth] (-1.5,12.25) -- (-1.5,11.25);
+\draw [line width=0.3pt, ->, >=Stealth] (-1.5,12.25) -- (-0.5,12.25);
+\draw [line width=0.3pt, short] (-2,13) -- (-2,10.75);
+\draw [line width=0.3pt, short] (-3.75,13) -- (-3.75,12.75);
+\draw [line width=0.3pt, short] (-5.75,12.75) -- (-4.5,12.75);
+\draw [line width=0.3pt, short] (-4.5,12.75) -- (-4.5,11.75);
+\draw [line width=0.3pt, short] (-5.75,10.75) -- (-5.25,10.75);
+\draw [line width=0.3pt, <->, >=Stealth] (-5.5,12.75) -- (-5.5,10.75);
+\draw [line width=0.3pt, <->, >=Stealth] (-3.75,13) -- (-2,13);
+\draw [line width=0.3pt, <->, >=Stealth] (-5,10.5) -- (-2,10.5);
+\draw [line width=0.3pt, short] (-2,10.75) -- (-2,10.25);
+\draw [line width=0.3pt, short] (-5,10.75) -- (-5,10.25);
+\node [font=\small] at (-1.25,11.25) {z};
+\node [font=\small] at (-0.5,12.5) {$\theta$};
+\node [font=\small] at (-2.75,12) {$w_2$};
+\node [font=\small] at (-3.25,11.5) {$w_1$};
+\node [font=\small] at (-5,12) {$c_1$};
+\node [font=\small] at (-4.25,11.5) {$c_2$};
+\node [font=\small] at (-3,13.25) {$40 m/s$};
+\node [font=\small] at (-3.5,10.25) {$U =100m/s$};
+\node [font=\small] at (-6,11.75) {$c_z = 60m/s$};
+\node [font=\small] at (-4.25,12) {};
+\node [font=\footnotesize] at (-4.5,12.25) {$\alpha_1$};
+\node [font=\small] at (-5.5,13.25) {$\alpha_1 = 30^\circ$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+    \item As shown in the figure, a rigid slab CD of weight W (distributed uniformly along its length) is hung from a ceiling using three cables of identical length and cross-sectional area. The central cable is made of steel (Young's modulus = 3E) and the other two cables are made of aluminium (Young's modulus = E). The percentage of the total weight taken by the central cable is $\%$ (round off to the nearest integer).
+    \begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [ fill={rgb,255:red,10; green,10; blue,10} ] (-5.25,10.5) rectangle (-1.25,10.25);
+\draw [short] (-5.25,12.5) -- (-1.25,12.5);
+\draw [short] (-5.25,12.5) -- (-5.25,10.5);
+\draw [short] (-3.25,12.5) -- (-3.25,10.5);
+\draw [short] (-1.25,12.5) -- (-1.25,10.5);
+\draw [short] (-5.25,12.5) -- (-5,12.75);
+\draw [short] (-5,12.5) -- (-4.75,12.75);
+\draw [short] (-4.75,12.5) -- (-4.5,12.75);
+\draw [short] (-4.5,12.5) -- (-4.25,12.75);
+\draw [short] (-4.25,12.5) -- (-4,12.75);
+\draw [short] (-4,12.5) -- (-3.75,12.75);
+\draw [short] (-3.75,12.5) -- (-3.5,12.75);
+\draw [short] (-3.5,12.5) -- (-3.25,12.75);
+\draw [short] (-3.25,12.5) -- (-3,12.75);
+\draw [short] (-3,12.5) -- (-2.75,12.75);
+\draw [short] (-2.75,12.5) -- (-2.5,12.75);
+\draw [short] (-2.5,12.5) -- (-2.25,12.75);
+\draw [short] (-2.25,12.5) -- (-2,12.75);
+\draw [short] (-2,12.5) -- (-1.75,12.75);
+\draw [short] (-1.75,12.5) -- (-1.5,12.75);
+\draw [short] (-1.5,12.5) -- (-1.25,12.75);
+\draw [short] (-1.25,12.5) -- (-1,12.75);
+\draw [<->, >=Stealth] (-5.25,13) -- (-3.25,13);
+\draw [<->, >=Stealth] (-3.25,13) -- (-1.25,13);
+\node [font=\normalsize] at (-4.25,13.25) {a};
+\node [font=\normalsize] at (-2.25,13.25) {a};
+\node [font=\normalsize] at (-5.5,10) {C};
+\node [font=\normalsize] at (-1.25,10) {D};
+\node [font=\normalsize] at (-5.5,11.5) {E};
+\node [font=\normalsize] at (-1,11.5) {E};
+\node [font=\normalsize] at (-3.5,11.5) {3E};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    \item All the bars in the given truss are elastic with Young's modulus $200 GPa$, and have identical cross-sections with moment of inertia $0.1 cm^2$. The lowest value of the load $P$ at which the truss fails due to buckling is $\dots$ KN (round off to the nearest integer).
+
+    \begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (3,6.5) -- (7.25,6.5);
+\draw [short] (3,6.25) -- (7.25,6.25);
+\draw [short] (3,6.5) .. controls (3,6.25) and (3,6.25) .. (3,6.25);
+\draw [short] (7.25,6.5) -- (7.25,6.25);
+\draw [short] (3,6.5) -- (5,9.25);
+\draw [short] (3.25,6.5) -- (5,9);
+\draw [short] (7.25,6.5) -- (5,9.25);
+\draw [short] (7,6.5) -- (5,9);
+\draw [short] (5,9) -- (5,9.25);
+\draw [->, >=Stealth] (5,9.75) -- (5,9.25);
+\foreach \x in {0,...,0}{
+  \draw  (2.75+\x*0.6802721088435374,6) -- ++(0.3401360544217687,0.3) -- ++ (0.3401360544217687, -0.3);
+}
+\draw [short] (2.5,6) -- (3.75,6);
+\draw [short] (2.5,6) -- (2.75,5.75);
+\draw [short] (2.75,6) -- (3,5.75);
+\draw [short] (3,6) -- (3.25,5.75);
+\draw [short] (3.25,6) -- (3.5,5.75);
+\draw [short] (3.5,6) -- (3.75,5.75);
+\draw [short] (3.75,6) -- (4,5.75);
+\draw [short] (4.75,8.75) -- (5,8.5);
+\draw [short] (5,8.5) -- (5.25,8.75);
+\foreach \x in {0,...,0}{
+  \draw  (6.75+\x*0.6802721088435374,6) -- ++(0.3401360544217687,0.3) -- ++ (0.3401360544217687, -0.3);
+}
+\draw [short] (3.75,7.25) .. controls (4,6.75) and (4,6.75) .. (3.75,6.5);
+\node [font=\normalsize] at (4.25,7) {$45^{\circ}$};
+\draw [short] (6.5,7.25) .. controls (6.25,6.75) and (6.25,6.75) .. (6.25,6.5);
+\node [font=\normalsize] at (5.75,7) {$45^{\circ}$};
+\node [font=\normalsize] at (4.75,9.25) {A};
+\node [font=\normalsize] at (2.75,6.5) {B};
+\node [font=\normalsize] at (7.5,6.5) {C};
+\draw [<->, >=Stealth] (3,5.25) -- (7.25,5.25);
+\node [font=\normalsize] at (5,5.5) {10 cm};
+\node [font=\normalsize] at (7.25,6) {0};
+\node [font=\normalsize] at (7,6) {0};
+\node [font=\normalsize] at (6.75,6) {0};
+\node [font=\normalsize] at (7.5,6) {0};
+\draw [short] (6.5,6) -- (6.75,5.75);
+\draw [short] (6.75,6) -- (7,5.75);
+\draw [short] (7,6) -- (7.25,5.75);
+\draw [short] (7.25,6) -- (7.5,5.75);
+\draw [short] (7.5,6) -- (7.75,5.75);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+    \item A solid circular shaft is designed to transmit a torque $T$ with a factor of safety of $2$. It is proposed to replace the solid shaft by a hollow shaft of the same material and identical outer radius. If the inner radius is half the outer radius, the factor of safety for the hollow shaft is $\dots$ (round off to 1 decimal place).
+
+    \begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (-5.5,11.25) circle (1.25cm);
+\draw  (-2.5,11.25) circle (1.25cm);
+\draw  (-2.5,11.25) circle (0.75cm);
+\draw [->, >=Stealth] (-5.5,11.25) -- (-4.75,12.25);
+\draw [->, >=Stealth] (-2.5,11.25) -- (-2,10.75);
+\draw [->, >=Stealth] (-2.5,11.25) -- (-1.75,12.25);
+\draw [short] (-4.75,12.25) -- (-4.25,12.25);
+\draw [short] (-1.75,12.25) -- (-1.25,12.25);
+\node [font=\large] at (-4.5,12.5) {$R$};
+\node [font=\large] at (-1.5,12.5) {$R$};
+\node [font=\normalsize] at (-2.5,10.75) {$R/2$};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+
+    \item In the structure shown in the figure, bars $AB$ and $BC$ are made of identical material and have circular cross-sections of $10 mm$ radii. The yield stress of the material under uniaxial tension is $280 MPa$. Using the von Mises yield criterion, the maximum load along the z- direction (perpendicular to the plane of paper) that can be applied at $C$, such that $AB$ does not yield is $\dots$ $N$ (round off to the nearest integer).
+
+    \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (-6,11) -- (-6,9);
+\draw [short] (-6,11) -- (-6.25,10.75);
+\draw [short] (-6,10.75) -- (-6.25,10.5);
+\draw [short] (-6,10.5) -- (-6.25,10.25);
+\draw [short] (-6,10.25) -- (-6.25,10);
+\draw [short] (-6,10) -- (-6.25,9.75);
+\draw [short] (-6,9.75) -- (-6.25,9.5);
+\draw [short] (-6,9.5) -- (-6.25,9.25);
+\draw [short] (-6,9.25) -- (-6.25,9);
+\draw [short] (-6,9) -- (-6.25,8.75);
+\draw [short] (-6,10) -- (-2.25,10);
+\draw [short] (-2.25,10) -- (-2.25,13.25);
+\draw [->, >=Stealth] (-6,11) -- (-6,11.5);
+\draw [->, >=Stealth] (-6,9.75) -- (-5.25,9.75);
+\draw (-2.25,13) to[short, -o] (-2.25,13.25) ;
+\node [font=\large] at (-5.75,10.25) {A};
+\node [font=\large] at (-2.5,10.25) {B};
+\node [font=\large] at (-2.5,13) {C};
+\node [font=\normalsize] at (-5,9.75) {x};
+\node [font=\normalsize] at (-6,11.75) {y};
+\node [font=\normalsize] at (-4.75,11.25) {AB = 0.55m};
+\node [font=\normalsize] at (-4.75,10.75) {BC = 0.5m};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+    \item A thin-walled tube, with the cross-section shown in the figure, is subjected to a torque of $T=1 kN-m$. The walls have uniform thickness $t = 1 mm$ and shear modulus $G = 26 GPa$. Assume that the curved portion is semi-circular. The shear stress in the wall is $\dots$ $MPa$ (round off to 1 decimal place).
+
+    \begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [line width=0.8pt, short] (-5,13) .. controls (-5.5,12.25) and (-5.5,11.75) .. (-5,11);
+\draw [line width=0.8pt, short] (-5,11) -- (0.25,11);
+\draw [line width=0.8pt, short] (-5,13) -- (0.25,11);
+\draw [line width=0.3pt, ->, >=Stealth] (-4.75,12) -- (-5.25,12.25);
+\node [font=\small] at (-2.25,10.75) {0.5 m};
+\node [font=\small] at (-4,11.75) {R =50mm};
+\draw [line width=0.3pt, <->, >=Stealth] (-5,10.5) -- (0.25,10.5);
+\draw [line width=0.3pt, short] (-5,10.75) -- (-5,10.25);
+\draw [line width=0.3pt, short] (0.25,10.75) -- (0.25,10.25);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+    \item For a damped spring-mass system, mass $m = 10 kg$, stiffness $k = 10^3 N/m$, and damping coefficient $c = 20 kg/s$. The ratio of the amplitude of oscillation of the first cycle to that of the fifth cycle is $\dots$ (round off to 1 decimal place).
+
+    \item For the system of springs and masses shown below, $k = 1250 N/m$ and $m = 10 kg$. The highest natural frequency, $\omega$, of the system is $\dots$ radians/s (round off to nearest integer).
+    \begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (-6,10) to[R] (-3.5,10);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (-3.5,10.5) rectangle (-2.5,9.5);
+\draw (-2.5,10) to[R] (-0.25,10);
+\node [font=\LARGE] at (-2.5,9.5) {};
+\node [font=\LARGE] at (-2,9) {};
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (-0.25,10.5) rectangle (0.75,9.5);
+\draw (0.75,10) to[R] (3,10);
+\draw [short] (3,11) -- (3,9);
+\draw [short] (-6,11) -- (-6,9);
+\draw [short] (-3,9.75) -- (-3,8.75);
+\draw [short] (0.25,9.75) -- (0.25,8.75);
+\draw [->, >=Stealth] (-3,9.25) -- (-2.25,9.25);
+\draw [->, >=Stealth] (0.25,9.25) -- (1,9.25);
+\draw [short] (3,11) -- (3.25,10.75);
+\draw [short] (3,10.75) -- (3.25,10.5);
+\draw [short] (3,10.5) -- (3.25,10.25);
+\draw [short] (3,10.25) -- (3.25,10);
+\draw [short] (3,10) -- (3.25,9.75);
+\draw [short] (3,9.75) -- (3.25,9.5);
+\draw [short] (3,9.5) -- (3.25,9.25);
+\draw [short] (3,9.25) -- (3.25,9);
+\draw [short] (3,9) -- (3.25,8.75);
+\draw [short] (-6,11) -- (-6.25,10.75);
+\draw [short] (-6,10.75) -- (-6.25,10.5);
+\draw [short] (-6,10.5) -- (-6.25,10.25);
+\draw [short] (-6,10.25) -- (-6.25,10);
+\draw [short] (-6,10) -- (-6.25,9.75);
+\draw [short] (-6,9.75) -- (-6.25,9.5);
+\draw [short] (-6,9.5) -- (-6.25,9.25);
+\draw [short] (-6,9.25) -- (-6.25,9);
+\draw [short] (-6,9) -- (-6.25,8.75);
+\node [font=\large] at (-1.5,10.75) {2k};
+\node [font=\large] at (1.75,10.5) {k};
+\node [font=\large] at (-4.75,10.5) {k};
+\node [font=\large] at (-3,10.75) {m};
+\node [font=\large] at (0.25,10.75) {m};
+\node [font=\large] at (-2.5,9) {$x_1$};
+\node [font=\large] at (0.75,9) {$x_2$};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+
+\end{enumerate}
+\end{document}
