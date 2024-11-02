@@ -1,0 +1,401 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{amsmath}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}  
+\usepackage{circuitikz}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{GATE CE - 2020}
+\author{AI24BTECH11001 Abhijeet Kumar}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=40]
+    \item Consider the system of equations
+    \begin{align*}
+    \begin{bmatrix}
+        1 & 3 & 2 \\
+        2 & 2 & -3 \\
+        4 & 4 & -6 \\
+        2 & 5 & 2 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        x_1 \\
+        x_2 \\
+        x_3 \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        1 \\
+        1 \\
+        2 \\
+        1 \\
+    \end{bmatrix}
+    \end{align*}
+    The value of $x_3$ (round off to the mearest integer), is $\dots$
+
+    \item A rigid, uniform, weightless, horizontal bar is connected to three vertical members P, Q and R as shown in the figure (not drawn to the scale). All three members have identical axial stiffness of $10 kN/mm$. The lower ends of bars P and R rest on a rigid horizontal surface. When NO load is applied, a gap of $2$ mm exists between the lower end of the bar Q and the rigid horizontal surface. When a vertical load W is placed on the horizontal bar in the downward direction, the bar still remains horizontal and gets displaced by 5 mm in the vertically downward direction.
+    \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [ fill={rgb,255:red,139; green,126; blue,126} ] (4,8.25) rectangle (8.25,7.75);
+\draw  (4,7.75) rectangle (4.25,4.5);
+\draw  (8,7.75) rectangle (8.25,4.5);
+\draw  (6,7.75) rectangle (6.25,5);
+\draw [short] (3.5,4.5) -- (8.75,4.5);
+\draw [short] (3.5,4.5) -- (3.25,4.25);
+\draw [short] (3.75,4.5) -- (3.5,4.25);
+\draw [short] (4,4.5) -- (3.75,4.25);
+\draw [short] (4.25,4.5) -- (4,4.25);
+\draw [short] (4.5,4.5) -- (4.25,4.25);
+\draw [short] (4.75,4.5) -- (4.5,4.25);
+\draw [short] (5,4.5) -- (4.75,4.25);
+\draw [short] (5.25,4.5) -- (5,4.25);
+\draw [short] (5.5,4.5) -- (5.25,4.25);
+\draw [short] (5.75,4.5) -- (5.5,4.25);
+\draw [short] (6,4.5) -- (5.75,4.25);
+\draw [short] (6.25,4.5) -- (6,4.25);
+\draw [short] (6.5,4.5) -- (6.25,4.25);
+\draw [short] (6.75,4.5) -- (6.5,4.25);
+\draw [short] (7,4.5) -- (6.75,4.25);
+\draw [short] (7.25,4.5) -- (7,4.25);
+\draw [short] (7.5,4.5) -- (7.25,4.25);
+\draw [short] (7.75,4.5) -- (7.5,4.25);
+\draw [short] (8,4.5) -- (7.75,4.25);
+\draw [short] (8.25,4.5) -- (8,4.25);
+\draw [short] (8.5,4.5) -- (8.25,4.25);
+\draw [short] (8.75,4.5) -- (8.5,4.25);
+\draw [short] (6.75,5) -- (7.25,5);
+\draw [->, >=Stealth] (7,5.5) -- (7,5);
+\draw [->, >=Stealth] (7.25,8.75) -- (6.75,8.25);
+\draw [->, >=Stealth] (7,3.5) -- (7,4.5);
+\draw [->, >=Stealth] (3.75,3.25) -- (4.5,4);
+\draw  (7.75,6.5) ellipse (0.25cm and 0.25cm);
+\draw  (5.5,6.5) ellipse (0.25cm and 0.25cm);
+\draw  (3.5,6.5) ellipse (0.25cm and 0.25cm);
+\node [font=\large] at (3.5,6.5) {P};
+\node [font=\large] at (5.5,6.5) {Q};
+\node [font=\large] at (7.75,6.5) {R};
+\node [font=\normalsize] at (7.5,4.75) {GAP};
+\node [font=\normalsize] at (6,9) {Rigid uniform weigthless horizontal bar};
+\node [font=\normalsize] at (3,3.25) {Rigid};
+\node [font=\normalsize] at (2.5,2.75) {Horizontal};
+\node [font=\normalsize] at (4,2.75) {Surface};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    The magnitude of the load $W$ (in KN, round off to the nearest integer), is $\dots$
+
+    \item The flange and web plates of the doubly symmetric built-up section are connected by continuous $10 mm$ thick fillet welds as shown in the figure (not drawn to the scale). The moment of inertia of the section about its principal axis X-X is $7.73 x 10^6 mm^2$. The permissible shear stress in the fillet welds is $100 N/mm^2$. The design shear strength of the section is governed by the capacity of the fillet welds.
+    \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Huge]
+\draw  (4.25,7.75) rectangle (8,7.25);
+\draw  (4.25,4.25) rectangle (8,3.75);
+\draw  (5,7.25) rectangle (5.25,4.25);
+\draw  (6.75,7.25) rectangle (7,4.25);
+\draw [dashed] (4,5.75) -- (8.25,5.75);
+\draw [short] (8.5,7.75) -- (9.25,7.75);
+\draw [short] (8.5,7.25) -- (9.25,7.25);
+\draw [short] (4.25,8.5) -- (4.25,8);
+\draw [short] (8,8.5) -- (8,8);
+\draw [short] (3.25,3.75) -- (4,3.75);
+\draw [short] (3.25,7.75) -- (4,7.75);
+\draw [<->, >=Stealth] (3.25,7.75) -- (3.25,3.75);
+\draw [<->, >=Stealth] (4.25,8.25) -- (8,8.25);
+\draw [->, >=Stealth] (8.75,6.25) -- (8.75,7.25);
+\draw [->, >=Stealth] (8.75,8.75) -- (8.75,7.75);
+\draw [->, >=Stealth] (8.25,5) -- (7,4.5);
+\node [font=\normalsize] at (6,8.5) {100 mm};
+\node [font=\normalsize] at (9.25,6.75) {10 mm};
+\node [font=\normalsize] at (8.5,5.75) {X};
+\node [font=\normalsize] at (3.75,5.75) {X};
+\node [font=\normalsize] at (2.5,5.75) {120 mm};
+\node [font=\normalsize] at (8.75,5) {10 mm};
+\node [font=\normalsize] at (9.25,4.75) {fillet weld (typical)};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    The maximum shear force (in kN, round off to one decimal place) that can be carried by the section, is $\dots$
+
+    \item The singly reinforced concrete beam section shown in the figure (not drawn to the scale) is made of $M25$ grade concrete and $Fe500$ grade reinforcing steel. The total cross-sectional area of the tension steel is $942 mm^2$.
+    \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw [ line width=0.8pt ] (4.25,9) rectangle (7.25,5);
+\draw [short] (4.25,4.5) -- (4.25,4);
+\draw [short] (7.25,4.5) -- (7.25,4);
+\draw [short] (7.75,5.75) -- (8.25,5.75);
+\draw [short] (7.75,9) -- (8.25,9);
+\draw [<->, >=Stealth] (4.25,4.25) -- (7.25,4.25);
+\draw [<->, >=Stealth] (8,9) -- (8,5.75);
+\draw [ fill={rgb,255:red,13; green,13; blue,13} ] (5,5.5) circle (0.25cm);
+\draw [ fill={rgb,255:red,13; green,13; blue,13} ] (5.75,5.5) circle (0.25cm);
+\draw [ fill={rgb,255:red,13; green,13; blue,13} ] (6.5,5.5) circle (0.25cm);
+\node [font=\large] at (5.75,3.75) {300 mm};
+\node [font=\large] at (9,7.25) {450 mm};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    As per Limit State Design of IS $456:2000$, the design moment capacity (in kN.m, round off to two decimal places) of the beam section, is $\dots$
+
+    \item A simply supported prismatic concrete beam of rectangular cross-section, having a span of $8 m$, is prestressed with an effective prestressing force of $600 kN$. The eccentricity of the prestressing tendon is zero at supports and varies linearly to a value of $e$ at the mid-span. In order to balance an external concentrated load of $12 kN$ applied at the mid-span, the required value of e (in mm, round off to the nearest integer) of the tendon, is $\dots$
+
+    \item Traffic volume count has been collected on a $2$-lane road section which needs upgradation due to severe traffic flow condition. Maximum service flow rate per lane is observed as $1280 veh/h$ at level of service 'C'. The Peak Hour Factor is reported as $0.78125$. Historical traffic volume count provides Annual Average Daily Traffic as $12270 veh/day$. Directional split of the traffic flow is observed to be $60:40$. Assuming that traffic stream consists of 'All Cars' and all drivers are 'Regular Commuters', the number of extra lane(s) (round off to the next higher integer) to be provided, is $\dots$
+
+    \item A vertical retaining wall of $5 m$ height has to support soil having unit weight of $18 kN/m^3$, effective cohesion of $12 kN/m^2$, and effective friction angle of $30^{\circ}$. As per Rankine's earth pressure theory and assuming that a tension crack has occurred, the lateral active thrust on the wall per meter length (in kN/m, round off to two decimal places), is $\dots$
+
+    \item Water flows in the upward direction in a tank through $2.5 m$ thick sand layer as shown in the figure. The void ratio and specific gravity of sand are $0.58$ and $2.7$, respectively. The sand is fully saturated. Unit weight of water is $10 kN/m^3$.
+
+    \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Huge]
+\draw [ fill={rgb,255:red,173; green,169; blue,169} ] (5.25,6.75) rectangle (7.75,4.5);
+\draw  (5.25,7.5) rectangle (7.75,6.75);
+\draw  (5.25,4.5) rectangle (7.75,4.25);
+\draw [short] (7.75,4.5) -- (9,4.5);
+\draw [short] (7.75,4.75) -- (8.75,4.75);
+\draw [short] (8.75,4.75) -- (8.75,8.5);
+\draw [short] (9,8.5) -- (9,4.5);
+\draw [short] (6.25,4.25) -- (6.25,3.75);
+\draw [short] (6.75,4.25) -- (6.75,3.25);
+\draw [short] (4.5,3.75) -- (6.25,3.75);
+\draw [short] (4.5,3.25) -- (6.75,3.25);
+\draw [short] (5.5,4.5) -- (5.5,4.25);
+\draw [short] (5.75,4.5) -- (5.75,4.25);
+\draw [short] (6,4.5) -- (6,4.25);
+\draw [short] (6.25,4.5) -- (6.25,4.25);
+\draw [short] (6.5,4.5) -- (6.5,4.25);
+\draw [short] (6.75,4.5) -- (6.75,4.25);
+\draw [short] (7,4.5) -- (7,4.25);
+\draw [short] (7.25,4.5) -- (7.25,4.25);
+\draw [short] (7.5,4.5) -- (7.5,4.25);
+\draw [short] (3.75,6.75) -- (5.25,6.75);
+\draw [short] (3.75,4.5) -- (5,4.5);
+\draw [short] (7.25,8.25) -- (8.75,8.25);
+\draw [short] (4.25,5.25) -- (5.25,5.25);
+\draw [<->, >=Stealth] (7.5,8.25) -- (7.5,7.5);
+\draw [<->, >=Stealth] (4.75,5.25) -- (4.75,4.5);
+\draw [<->, >=Stealth] (3.75,6.75) -- (3.75,4.5);
+\draw [<->, >=Stealth] (4.75,7.5) -- (4.75,6.75);
+\draw [short] (4.5,7.5) -- (5,7.5);
+\draw [->, >=Stealth] (4.25,3.5) -- (5.25,3.5);
+\draw [->, >=Stealth] (6,7.5) .. controls (5.5,8.5) and (5.5,8) .. (5,7.5) ;
+\node [font=\normalsize] at (6.5,7) {water};
+\node [font=\normalsize] at (6.5,6) {sand};
+\node [font=\normalsize] at (6.5,5.5) {A};
+\node [font=\normalsize] at (4.25,4.75) {1 m};
+\node [font=\normalsize] at (3.25,5.5) {2.5m};
+\node [font=\normalsize] at (4.25,7.25) {1m};
+\node [font=\normalsize] at (7,8) {1.2m};
+\node [font=\normalsize] at (5,8.5) {Outward flow};
+\node [font=\normalsize] at (3.25,3.5) {Inward flow};
+\node [font=\normalsize] at (3.25,4) {Filter media};
+\draw [->, >=Stealth] (4.25,4) -- (6,4.25);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    The effective stress (in kPa, round off to two decimal places) at point A, located $1 m$ above the base of tank, is $\dots$
+
+    \item A $10 m$ thick clay layer is resting over a $3 m$ thick sand layer and is submerged. A fill of $2 m$ thick sand with unit weight of $20 kN/m^3$ is placed above the clay layer to accelerate the rate of consolidation of the clay layer. Coefficient of consolidation of clay is $9\times102 m^2/year$ and coefficient of volume compressibility of clay is $2.2\times10 m^2/kN$. Assume Taylor's relation between time factor and average degree of consolidation.
+    \begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (3.25,4.25) -- (9.5,4.25);
+\draw [short] (3.25,5.75) -- (9.5,5.75);
+\draw [short] (3.25,8.25) -- (9.5,8.25);
+\draw [short] (3.75,4.25) -- (3.5,4);
+\draw [short] (4,4.25) -- (3.75,4);
+\draw [short] (4.25,4.25) -- (4,4);
+\draw [short] (4.5,4.25) -- (4.25,4);
+\draw [short] (4.75,4.25) -- (4.5,4);
+\draw [short] (5,4.25) -- (4.75,4);
+\draw [short] (5.25,4.25) -- (5,4);
+\draw [short] (5.5,4.25) -- (5.25,4);
+\draw [short] (5.75,4.25) -- (5.5,4);
+\draw [short] (6,4.25) -- (5.75,4);
+\draw [short] (6.25,4.25) -- (6,4);
+\draw [short] (6.75,4.25) -- (6.5,4.25);
+\draw [short] (6.5,4.25) -- (6.25,4);
+\draw [short] (6.75,4.25) -- (6.5,4);
+\draw [short] (7,4.25) -- (6.75,4);
+\draw [short] (7.25,4.25) -- (7,4);
+\draw [short] (7.5,4.25) -- (7.25,4);
+\draw [short] (7.75,4.25) -- (7.5,4);
+\draw [short] (8,4.25) -- (7.75,4);
+\draw [short] (8.25,4.25) -- (8,4);
+\draw [short] (8.5,4.25) -- (8.25,4);
+\draw [short] (8.75,4.25) -- (8.5,4);
+\draw [short] (9,4.25) -- (8.75,4);
+\draw [short] (9.25,4.25) -- (9,4);
+\draw [short] (9.5,4.25) -- (9.25,4);
+\draw [<->, >=Stealth] (4,8.25) -- (4,5.75);
+\draw [<->, >=Stealth] (4,5.75) -- (4,4.25);
+\node [font=\normalsize] at (3.25,6.75) {10 m};
+\node [font=\normalsize] at (3.25,5) {3 m};
+\node [font=\normalsize] at (6.25,7) {Clay};
+\node [font=\normalsize] at (6.25,5) {Sand};
+\node [font=\normalsize] at (7.25,8.5) {Water Table};
+\node [font=\normalsize] at (6.5,3.75) {Impervious stratum};
+\draw [short] (8.5,8.5) -- (8.75,8.25);
+\draw [short] (9,8.5) -- (8.75,8.25);
+\draw [short] (8.5,8.5) -- (9,8.5);
+\draw [short] (8.5,8.25) -- (8.75,8.25);
+\draw [short] (8.5,8) -- (9,8);
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    The settlement (in mm, round off to two decimal places) of the clay layer, $10$ years after the construction of the fill, is $\dots$
+
+    \item Three reservoirs P, Q, and R are interconnected by pipes as shown in the figure (not drawn to the scale). Piezometric head at the junction S of the pipes is 100 m. Assume acceleration due to gravity as $9.81 m/s^2$ and density of water as $1000 kg/m^3$. The length of the pipe from junction S to the inlet of reservoir R is $180 m$.
+    \begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (5.75,6.25) -- (8.5,7);
+\draw [short] (5.75,6) -- (8.5,6.75);
+\draw [short] (5.75,6) -- (7.25,4.25);
+\draw [short] (5.25,6) -- (7.25,3.75);
+\draw [short] (3,6.75) -- (5.25,6);
+\draw [short] (3,7) -- (5.5,6.25);
+\draw [short] (5.5,6.25) -- (5.5,8);
+\draw [short] (5.75,8) -- (5.75,6.25);
+\draw [short] (7.25,5.25) -- (7.25,4.25);
+\draw [short] (7.25,3.75) -- (7.25,2.5);
+\draw [short] (7.25,2.5) -- (9.5,2.5);
+\draw [short] (9.5,5.25) -- (9.5,2.5);
+\draw [short] (8.5,8.5) -- (8.5,7);
+\draw [short] (8.5,6.75) -- (8.5,6.25);
+\draw [short] (8.5,6.25) -- (10.5,6.25);
+\draw [short] (10.5,8.5) -- (10.5,6.25);
+\draw [short] (7.25,4.75) -- (9.5,4.75);
+\draw [short] (8.5,8.25) -- (10.5,8.25);
+\draw [short] (9.25,8.5) -- (9.5,8.25);
+\draw [short] (9.75,8.5) -- (9.5,8.25);
+\draw [short] (9.25,8.5) -- (9.75,8.5);
+\draw [short] (8,5) -- (8.25,4.75);
+\draw [short] (8.5,5) -- (8.25,4.75);
+\draw [short] (8,5) -- (8.5,5);
+\draw [short] (3,6.75) -- (3,5.75);
+\draw [short] (0.75,8.25) -- (0.75,5.75);
+\draw [short] (0.75,5.75) -- (3,5.75);
+\draw [short] (3,8.25) -- (3,7);
+\draw [short] (0.75,7.75) -- (3,7.75);
+\draw [short] (1.5,8) -- (1.75,7.75);
+\draw [short] (2,8) -- (1.75,7.75);
+\draw [short] (1.5,8) -- (2,8);
+\draw [short] (-0.25,1.75) -- (12,1.75);
+\draw [<->, >=Stealth] (11.25,8.25) -- (11.25,1.75);
+\draw [<->, >=Stealth] (0.25,7.75) -- (0.25,1.75);
+\draw [short] (10.5,8.25) -- (11.5,8.25);
+\draw [short] (-0.25,7.75) -- (0.75,7.75);
+\draw [short] (4.25,6) -- (5.5,6);
+\draw [<->, >=Stealth] (4.75,6) -- (4.75,1.75);
+\draw [->, >=Stealth] (3.25,4.5) .. controls (3.25,5.5) and (3.5,5.5) .. (3.75,6.5) ;
+\draw [short] (5.5,7.5) -- (5.75,7.5);
+\draw [short] (4.25,7.5) -- (5.5,7.5);
+\draw [<->, >=Stealth] (4.5,7.5) -- (4.5,6);
+\draw [->, >=Stealth] (6.25,4) -- (6.5,4.75);
+\draw [->, >=Stealth] (7.5,8) -- (7,6.5);
+\node [font=\normalsize] at (1.75,7) {Reservoir};
+\node [font=\normalsize] at (9.5,7.5) {Reservoir};
+\node [font=\normalsize] at (8.25,4) {Reservoir};
+\node [font=\normalsize] at (1.75,6.5) {P};
+\node [font=\normalsize] at (9.5,7) {Q};
+\node [font=\normalsize] at (8.25,3.5) {R};
+\node [font=\normalsize] at (10.75,3.75) {106m};
+\node [font=\normalsize] at (5.25,4.75) {90m};
+\node [font=\normalsize] at (5,7) {10m};
+\node [font=\normalsize] at (-0.25,4) {109m};
+\node [font=\normalsize] at (5.25,1.25) {Datum};
+\node [font=\normalsize] at (6,3.5) {Length = 180m};
+\node [font=\normalsize] at (6,3) {Diameter = 45cm};
+\node [font=\normalsize] at (7,9) {Diameter = 30cm};
+\node [font=\normalsize] at (7,8.5) {Flow velocity = 1.98m/s};
+\node [font=\normalsize] at (2.5,4.25) {Diameter = 30cm};
+\node [font=\normalsize] at (2.25,3.75) {Flow velocity};
+\node [font=\normalsize] at (2.5,3.25) {= 2.56 m/s};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}
+    Considering head loss only due to friction (with friction factor of $0.03$ for all the pipes), the height of water level in the lowermost reservoir R (in m. round off to one decimal place) with respect to the datum, is $\dots$
+
+    \item In a homogeneous unconfined aquifer of area $3.00 km^2$, the water table was at an elevation of $102.00 m$. After a natural recharge of volume $0.90$ million cubic meter $(Mm^3)$, the water table rose to $103.20 m$. After this recharge, ground water pumping took place and the water table dropped down to $101.20 m$. The volume of ground water pumped after the natural recharge, expressed (in $Mm^3$ and round off to decimal places), is $\dots$
+
+    \item A circular water tank of $2 m$ diameter has a circular orifice of diameter $0.1 m$ at the bottom. Water enters the tank steadily at a flow rate of $20 litre/s$ and escapes through the orifice. The coefficient of discharge of the orifice is $0.8$. Consider the acceleration due to gravity as $9.81 m/s^2$ and neglect frictional losses. The height of the water level (in m, round off to two decimal places) in the tank at the steady state, is $\dots$
+
+    \item Surface Overflow Rate (SOR) of a primary settling tank (discrete settling) is $20000 litre/m^2$ per day. Kinematic viscosity of water in the tank is $1.01\times10^3 cm^3/s$. Specific gravity of the settling particles is $2.64$. Acceleration due to gravity is $9.81 m/s^2$. The minimum diameter (in um, round off one decimal place) of the particles that will be removed with $80\% $efficiency in the tank, is $\dots$
+\end{enumerate}
+\end{document}
