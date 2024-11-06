@@ -12,7 +12,7 @@ with open('output.txt', 'r') as file:
 t = np.linspace(-1, 1, 100)  # Adjust the range as needed
 
 # Parametric equations of the line
-x = 1 + 12 * t  # Assuming the line passes through (1, -2, 3)
+x = 1 + 6 * t  # Assuming the line passes through (1, -2, 3)
 y = -2 + 2 * t
 z = 3 + 3 * t
 
